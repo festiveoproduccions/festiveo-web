@@ -1,0 +1,45 @@
+﻿# PASO PENDIENTE: configurar un servicio OAuth compatible con GitHub.
+# Antes de iniciar sesión, añadir base_url y auth_endpoint según el proveedor OAuth elegido.
+backend:
+  name: github
+  repo: festiveoproduccions/festiveo-web
+  branch: main
+
+locale: es
+media_folder: images
+public_folder: /images
+publish: true
+
+collections:
+  - name: trayectoria_eventos
+    label: Eventos y trayectoria
+    files:
+      - name: listado_eventos
+        label: Eventos publicados
+        file: events.json
+        format: json
+        fields:
+          - label: Eventos
+            name: items
+            widget: list
+            summary: '{{fields.date}} — {{fields.title.ca}}'
+            fields:
+              - {label: Fecha o año, name: date, widget: string}
+              - label: Título
+                name: title
+                widget: object
+                fields:
+                  - {label: Català, name: ca, widget: string}
+                  - {label: Castellano, name: es, widget: string}
+              - label: Descripción
+                name: description
+                widget: object
+                fields:
+                  - {label: Català, name: ca, widget: text}
+                  - {label: Castellano, name: es, widget: text}
+              - label: Fotografías
+                name: photos
+                widget: list
+                required: false
+                field: {label: Imagen, name: image, widget: image}
+              - {label: Enlace de entradas o información (HTTPS), name: url, widget: string, required: false}
