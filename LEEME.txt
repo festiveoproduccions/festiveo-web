@@ -1,0 +1,13 @@
+FESTIVEO Produccions — WEB 2027
+
+WEB MULTIPÁGINA: index.html, nosaltres.html, serveis.html, esdeveniments.html, artistes.html y contacte.html.
+
+DATOS DE CONTACTO: +34 662 106 794 (teléfono y WhatsApp), festiveoproduccions@gmail.com, Reus, Tarragona.
+
+PARA AÑADIR FOTOS: copia las imágenes a assets/events/ (ejemplo: assets/events/veneno1.jpg). Después abre events.json y añade esa ruta dentro de la lista photos del evento correspondiente. Puedes añadir varias fotos separadas por comas. Para crear un evento, duplica un objeto JSON y cambia su título, descripción, fecha y fotos.
+
+PARA ACTUALIZAR LA WEB: vuelve a subir el contenido completo a tu proyecto Cloudflare Pages con Direct Upload. Comprueba que index.html esté en la raíz del ZIP.
+
+FORVENUES: el apartado está reservado en esdeveniments.html; cuando tengas el enlace oficial se puede añadir un botón o el código de inserción compatible.
+
+IMPORTANTE: la web todavía NO incluye panel de administración visual. La edición se hace en archivos y requiere volver a publicar. No se han inventado fotografías ni datos de artistas.
