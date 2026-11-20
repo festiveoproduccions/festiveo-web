@@ -4,6 +4,8 @@ backend:
   name: github
   repo: festiveoproduccions/festiveo-web
   branch: main
+  base_url: https://festiveo-auth.festiveoproduccions.workers.dev
+  auth_endpoint: auth
 
 locale: es
 media_folder: images
