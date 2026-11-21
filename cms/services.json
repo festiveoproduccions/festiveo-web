@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "title": {
+        "ca": "De la idea al projecte",
+        "es": "De la idea al proyecto"
+      },
+      "description": {
+        "ca": "Donem forma al concepte, definim necessitats i dissenyem la proposta.",
+        "es": "Damos forma al concepto, definimos necesidades y diseñamos la propuesta."
+      },
+      "image": "",
+      "url": ""
+    },
+    {
+      "title": {
+        "ca": "Producció i realització",
+        "es": "Producción y realización"
+      },
+      "description": {
+        "ca": "Planificació, coordinació, gestió i execució de l’esdeveniment.",
+        "es": "Planificación, coordinación, gestión y ejecución del evento."
+      },
+      "image": "",
+      "url": ""
+    },
+    {
+      "title": {
+        "ca": "So i il·luminació",
+        "es": "Sonido e iluminación"
+      },
+      "description": {
+        "ca": "Suport tècnic i solucions de so i llum segons les necessitats de cada projecte.",
+        "es": "Soporte técnico y soluciones de sonido e iluminación según las necesidades de cada proyecto."
+      },
+      "image": "",
+      "url": ""
+    },
+    {
+      "title": {
+        "ca": "Animació i espectacles",
+        "es": "Animación y espectáculos"
+      },
+      "description": {
+        "ca": "Propostes d’animació i actuacions per donar vida a cada espai.",
+        "es": "Propuestas de animación y actuaciones para dar vida a cada espacio."
+      },
+      "image": "",
+      "url": ""
+    },
+    {
+      "title": {
+        "ca": "Artistes i grups col·laboradors",
+        "es": "Artistas y grupos colaboradores"
+      },
+      "description": {
+        "ca": "Accés a talent i formacions col·laboradores per amenitzar esdeveniments.",
+        "es": "Acceso a talento y formaciones colaboradoras para amenizar eventos."
+      },
+      "image": "",
+      "url": ""
+    },
+    {
+      "title": {
+        "ca": "Assessorament i suport",
+        "es": "Asesoramiento y apoyo"
+      },
+      "description": {
+        "ca": "T’ajudem a fer viable i portar a terme la teva idea, en qualsevol fase.",
+        "es": "Te ayudamos a hacer viable y llevar a cabo tu idea, en cualquier fase."
+      },
+      "image": "",
+      "url": ""
+    }
+  ]
+}

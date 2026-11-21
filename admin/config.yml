@@ -1,47 +1,1174 @@
-﻿# PASO PENDIENTE: configurar un servicio OAuth compatible con GitHub.
-# Antes de iniciar sesión, añadir base_url y auth_endpoint según el proveedor OAuth elegido.
 backend:
   name: github
   repo: festiveoproduccions/festiveo-web
   branch: main
   base_url: https://festiveo-auth.festiveoproduccions.workers.dev
   auth_endpoint: auth
-
 locale: es
 media_folder: images
 public_folder: /images
 publish: true
-
 collections:
-  - name: trayectoria_eventos
-    label: Eventos y trayectoria
-    files:
-      - name: listado_eventos
-        label: Eventos publicados
-        file: events.json
-        format: json
+- name: apariencia
+  label: 01 · Diseño y ajustes
+  files:
+  - name: ajustes
+    label: Apariencia, logo, contacto y menú
+    file: cms/settings.json
+    format: json
+    fields:
+    - label: Logotipo
+      name: logo
+      widget: image
+    - label: 'Color principal (hexadecimal, ejemplo #dbb77b)'
+      name: gold
+      widget: string
+    - label: Color de fondo (hexadecimal)
+      name: background
+      widget: string
+    - label: Color de texto (hexadecimal)
+      name: foreground
+      widget: string
+    - label: Imagen de fondo en la portada (opcional)
+      name: hero_image
+      widget: image
+      required: false
+    - label: Teléfono / WhatsApp
+      name: phone
+      widget: string
+    - label: Correo
+      name: email
+      widget: string
+    - label: Localización
+      name: location
+      widget: string
+    - label: Instagram (URL https://)
+      name: instagram
+      widget: string
+      required: false
+    - label: Facebook (URL https://)
+      name: facebook
+      widget: string
+      required: false
+    - label: TikTok (URL https://)
+      name: tiktok
+      widget: string
+      required: false
+    - label: Forvenues / Entradas (URL https://)
+      name: forvenues_url
+      widget: string
+      required: false
+    - label: Menú de navegación (no borrar secciones ni alterar el orden)
+      name: menu
+      widget: list
+      summary: '{{fields.ca}}'
+      fields:
+      - label: Nombre catalán
+        name: ca
+        widget: string
+      - label: Nombre castellano
+        name: es
+        widget: string
+      - label: Destino
+        name: href
+        widget: string
+- name: inicio
+  label: 02 · Inicio
+  files:
+  - name: pagina
+    label: Textos y botones de Inicio
+    file: cms/inicio.json
+    format: json
+    fields:
+    - label: Título de pestaña / SEO
+      name: seo_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: string
+      - label: Castellano
+        name: es
+        widget: string
+    - label: Descripción SEO
+      name: seo_description
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Etiquetas pequeñas de las secciones
+      name: eyebrows
+      widget: object
+      fields:
+      - label: Etiqueta 1 · FESTIVEO PRODUCCIONS · REUS
+        name: eyebrow01
+        widget: object
         fields:
-          - label: Eventos
-            name: items
-            widget: list
-            summary: '{{fields.date}}'
-            fields:
-              - {label: Fecha o año, name: date, widget: string}
-              - label: Título
-                name: title
-                widget: object
-                fields:
-                  - {label: Català, name: ca, widget: string}
-                  - {label: Castellano, name: es, widget: string}
-              - label: Descripción
-                name: description
-                widget: object
-                fields:
-                  - {label: Català, name: ca, widget: text}
-                  - {label: Castellano, name: es, widget: text}
-              - label: Fotografías
-                name: photos
-                widget: list
-                required: false
-                field: {label: Imagen, name: image, widget: image}
-              - {label: Enlace de entradas o información (HTTPS), name: url, widget: string, required: false}
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Etiqueta 2 · 01 / FESTIVEO
+        name: eyebrow02
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Etiqueta 3 · 2026 / 2027
+        name: eyebrow03
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Textos y títulos en la página
+      name: texts
+      widget: object
+      fields:
+      - label: 01 · FEM QUE LES IDEES COBRIN VIDA.
+        name: text01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 02 · Producció, realització i talent per convertir idees en experiències.
+        name: text02
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 03 · ELS NOSTRES SERVEIS
+        name: text03
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 04 · CONTACTA
+        name: text04
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 05 · CREATIVITAT, PRODUCCIÓ I EXPERIÈNCIA.
+        name: text05
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 06 · Idees i producció
+        name: text06
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 07 · Imaginem, planifiquem i executem esdeveniments de principi a fi.
+        name: text07
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 08 · Suport tècnic
+        name: text08
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 09 · So, il·luminació i animació adaptats a cada format.
+        name: text09
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 10 · Talent i espectacles
+        name: text10
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 11 · Artistes i grups col·laboradors per a experiències úniques.
+        name: text11
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 12 · LA NOSTRA TRAJECTÒRIA
+        name: text12
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 13 · UNA TEMPORADA PLENA D’HISTÒRIES.
+        name: text13
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: '14 · VENENO PARTY, DRAX i Ravalada Drag Tour Reus: coneix els projectes que form'
+        name: text14
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+      - label: 15 · VEURE ESDEVENIMENTS
+        name: text15
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Enlaces de los botones
+      name: buttons
+      widget: object
+      fields:
+      - label: Botón 1 · ELS NOSTRES SERVEIS
+        name: button01
+        widget: object
+        fields:
+        - label: Enlace o ruta de destino
+          name: href
+          widget: string
+      - label: Botón 2 · CONTACTA
+        name: button02
+        widget: object
+        fields:
+        - label: Enlace o ruta de destino
+          name: href
+          widget: string
+      - label: Botón 3 · LA NOSTRA TRAJECTÒRIA
+        name: button03
+        widget: object
+        fields:
+        - label: Enlace o ruta de destino
+          name: href
+          widget: string
+      - label: Botón 4 · VEURE ESDEVENIMENTS
+        name: button04
+        widget: object
+        fields:
+        - label: Enlace o ruta de destino
+          name: href
+          widget: string
+- name: nosaltres
+  label: 03 · Quiénes somos
+  files:
+  - name: pagina
+    label: Textos y botones de Quiénes somos
+    file: cms/nosaltres.json
+    format: json
+    fields:
+    - label: Título de pestaña / SEO
+      name: seo_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: string
+      - label: Castellano
+        name: es
+        widget: string
+    - label: Descripción SEO
+      name: seo_description
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Etiquetas pequeñas de las secciones
+      name: eyebrows
+      widget: object
+      fields:
+      - label: Etiqueta 1 · FESTIVEO PRODUCCIONS · REUS
+        name: eyebrow01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Textos y títulos en la página
+      name: texts
+      widget: object
+      fields:
+      - label: 01 · UNA TRAJECTÒRIA QUE ES VIU.
+        name: text01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 02 · Projectes, escenaris i experiències que ens han fet créixer durant el 2026.
+        name: text02
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 03 · TRAJECTÒRIA
+        name: text03
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 04 · UN ANY DE PROJECTES I ESCENARIS.
+        name: text04
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: '05 · FESTIVEO Produccions impulsa propostes d’oci, cultura i espectacles des de '
+        name: text05
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+      - label: 06 · VENENO PARTY · Edicions 1 i 2
+        name: text06
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 07 · Dues edicions de la nostra proposta de festa i espectacle.
+        name: text07
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 08 · DRAX · 7 edicions
+        name: text08
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 09 · Set edicions dedicades a l’art drag i al talent escènic.
+        name: text09
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 10 · Ravalada Drag Tour Reus 2026
+        name: text10
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 11 · Una altra experiència que forma part de la nostra trajectòria.
+        name: text11
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 12 · VEURE GALERIA
+        name: text12
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Enlaces de los botones
+      name: buttons
+      widget: object
+      fields:
+      - label: Botón 1 · VEURE GALERIA
+        name: button01
+        widget: object
+        fields:
+        - label: Enlace o ruta de destino
+          name: href
+          widget: string
+- name: servicios
+  label: 04 · Servicios
+  files:
+  - name: pagina
+    label: Textos y encabezados
+    file: cms/serveis.json
+    format: json
+    fields:
+    - label: Título de pestaña / SEO
+      name: seo_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: string
+      - label: Castellano
+        name: es
+        widget: string
+    - label: Descripción SEO
+      name: seo_description
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Etiquetas pequeñas de las secciones
+      name: eyebrows
+      widget: object
+      fields:
+      - label: Etiqueta 1 · FESTIVEO PRODUCCIONS · REUS
+        name: eyebrow01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Textos y títulos en la página
+      name: texts
+      widget: object
+      fields:
+      - label: 01 · DE LA IDEA A L’ESCENARI.
+        name: text01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 02 · T’acompanyem des del primer concepte fins a l’últim aplaudiment.
+        name: text02
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 03 · QUÈ FEM
+        name: text03
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 04 · SERVEIS A MIDA.
+        name: text04
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 05 · DEMANA’NS PRESSUPOST
+        name: text05
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Enlaces de los botones
+      name: buttons
+      widget: object
+      fields:
+      - label: Botón 1 · DEMANA’NS PRESSUPOST
+        name: button01
+        widget: object
+        fields:
+        - label: Enlace o ruta de destino
+          name: href
+          widget: string
+  - name: listado
+    label: Añadir / editar / eliminar servicios
+    file: cms/services.json
+    format: json
+    fields:
+    - label: Servicios
+      name: items
+      widget: list
+      summary: '{{fields.title.ca}}'
+      fields:
+      - label: Nombre del servicio
+        name: title
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Descripción
+        name: description
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+      - label: Foto
+        name: image
+        widget: image
+        required: false
+      - label: Enlace HTTPS
+        name: url
+        widget: string
+        required: false
+- name: artistas
+  label: 05 · Artistas
+  files:
+  - name: pagina
+    label: Textos de la página
+    file: cms/artistes.json
+    format: json
+    fields:
+    - label: Título de pestaña / SEO
+      name: seo_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: string
+      - label: Castellano
+        name: es
+        widget: string
+    - label: Descripción SEO
+      name: seo_description
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Etiquetas pequeñas de las secciones
+      name: eyebrows
+      widget: object
+      fields:
+      - label: Etiqueta 1 · FESTIVEO PRODUCCIONS · REUS
+        name: eyebrow01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Textos y títulos en la página
+      name: texts
+      widget: object
+      fields:
+      - label: 01 · TALENT QUE CONNECTA.
+        name: text01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 02 · Artistes, grups i col·laboradors per donar personalitat a cada esdeveniment
+        name: text02
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 03 · COL·LABORADORS
+        name: text03
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 04 · CADA PROJECTE MEREIX EL SEU TALENT.
+        name: text04
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 05 · Comptem amb artistes, grups i professionals col·laboradors per adaptar l’an
+        name: text05
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+      - label: 06 · Artistes escènics
+        name: text06
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 07 · Actuacions i propostes per a diferents públics.
+        name: text07
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 08 · DJs i animació
+        name: text08
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 09 · Música i dinamització per a celebracions i festes.
+        name: text09
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 10 · Grups col·laboradors
+        name: text10
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 11 · Formacions i propostes per amenitzar esdeveniments.
+        name: text11
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 12 · Les fitxes individuals s’afegiran quan tinguem les fotografies i dades auto
+        name: text12
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+  - name: listado
+    label: Añadir / editar / eliminar artistas
+    file: cms/artists.json
+    format: json
+    fields:
+    - label: Artistas
+      name: items
+      widget: list
+      required: false
+      summary: '{{fields.name.ca}}'
+      fields:
+      - label: Nombre artístico
+        name: name
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Biografía / descripción
+        name: bio
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+      - label: Foto del artista
+        name: image
+        widget: image
+        required: false
+      - label: Enlace HTTPS
+        name: url
+        widget: string
+        required: false
+- name: eventos
+  label: 06 · Eventos y galería
+  files:
+  - name: pagina
+    label: Textos de la página
+    file: cms/esdeveniments.json
+    format: json
+    fields:
+    - label: Título de pestaña / SEO
+      name: seo_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: string
+      - label: Castellano
+        name: es
+        widget: string
+    - label: Descripción SEO
+      name: seo_description
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Etiquetas pequeñas de las secciones
+      name: eyebrows
+      widget: object
+      fields:
+      - label: Etiqueta 1 · FESTIVEO PRODUCCIONS · REUS
+        name: eyebrow01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Etiqueta 2 · FORVENUES
+        name: eyebrow02
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Textos y títulos en la página
+      name: texts
+      widget: object
+      fields:
+      - label: 01 · ELS NOSTRES PROJECTES.
+        name: text01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 02 · Una galeria viva dels esdeveniments i espectacles que produïm.
+        name: text02
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 03 · ARXIU I GALERIA
+        name: text03
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 04 · ESDEVENIMENTS 2026
+        name: text04
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 05 · Afegeix o modifica esdeveniments i fotografies des del panell d’administrac
+        name: text05
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 06 · ENTRADES I RESERVES.
+        name: text06
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 07 · Espai preparat per incorporar enllaços o la integració de Forvenues quan di
+        name: text07
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+  - name: listado_eventos
+    label: Eventos, fotografías y entradas
+    file: events.json
+    format: json
+    fields:
+    - label: Eventos
+      name: items
+      widget: list
+      summary: '{{fields.date}}'
+      fields:
+      - label: Fecha o año
+        name: date
+        widget: string
+      - label: Título
+        name: title
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Descripción
+        name: description
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+      - label: Fotografías
+        name: photos
+        widget: list
+        required: false
+        field:
+          label: Imagen
+          name: image
+          widget: image
+      - label: URL de entradas / información (https://)
+        name: url
+        widget: string
+        required: false
+- name: contacto
+  label: 07 · Contacto
+  files:
+  - name: pagina
+    label: Textos y botones de Contacto
+    file: cms/contacte.json
+    format: json
+    fields:
+    - label: Título de pestaña / SEO
+      name: seo_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: string
+      - label: Castellano
+        name: es
+        widget: string
+    - label: Descripción SEO
+      name: seo_description
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Etiquetas pequeñas de las secciones
+      name: eyebrows
+      widget: object
+      fields:
+      - label: Etiqueta 1 · FESTIVEO PRODUCCIONS · REUS
+        name: eyebrow01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Textos y títulos en la página
+      name: texts
+      widget: object
+      fields:
+      - label: 01 · PARLEM DEL TEU PROJECTE.
+        name: text01
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 02 · Explica’ns què imagines i busquem com fer-ho realitat.
+        name: text02
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 03 · CONTACTE I CONTRACTACIONS
+        name: text03
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 04 · FEM-HO POSSIBLE.
+        name: text04
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 05 · Parlem?
+        name: text05
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 06 · Telèfon i WhatsApp
+        name: text06
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 07 · ENVIAR CORREU
+        name: text07
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 08 · Ubicació
+        name: text08
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: 09 · Treballem en projectes i esdeveniments segons les necessitats de cada clien
+        name: text09
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+    - label: Enlaces de los botones
+      name: buttons
+      widget: object
+      fields:
+      - label: Botón 1 · WHATSAPP
+        name: button01
+        widget: object
+        fields:
+        - label: Enlace o ruta de destino
+          name: href
+          widget: string
+      - label: Botón 2 · ENVIAR CORREU
+        name: button02
+        widget: object
+        fields:
+        - label: Enlace o ruta de destino
+          name: href
+          widget: string

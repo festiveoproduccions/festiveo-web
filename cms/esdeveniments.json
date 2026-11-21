@@ -1,0 +1,51 @@
+{
+  "seo_title": {
+    "ca": "FESTIVEO Produccions · Esdeveniments",
+    "es": "FESTIVEO Produccions · Eventos"
+  },
+  "seo_description": {
+    "ca": "FESTIVEO Produccions · Reus, Tarragona · Producció d’esdeveniments, espectacles i serveis tècnics.",
+    "es": "FESTIVEO Produccions · Reus, Tarragona · Producción de eventos, espectáculos y servicios técnicos."
+  },
+  "texts": {
+    "text01": {
+      "ca": "ELS NOSTRES <em>PROJECTES.</em>",
+      "es": "NUESTROS <em>PROYECTOS.</em>"
+    },
+    "text02": {
+      "ca": "Una galeria viva dels esdeveniments i espectacles que produïm.",
+      "es": "Una galería viva de los eventos y espectáculos que producimos."
+    },
+    "text03": {
+      "ca": "ARXIU I GALERIA",
+      "es": "ARCHIVO Y GALERÍA"
+    },
+    "text04": {
+      "ca": "ESDEVENIMENTS 2026",
+      "es": "EVENTOS 2026"
+    },
+    "text05": {
+      "ca": "Afegeix o modifica esdeveniments i fotografies des del panell d’administració.",
+      "es": "Añade o modifica eventos y fotografías desde el panel de administración."
+    },
+    "text06": {
+      "ca": "ENTRADES I RESERVES.",
+      "es": "ENTRADAS Y RESERVAS."
+    },
+    "text07": {
+      "ca": "Espai preparat per incorporar enllaços o la integració de Forvenues quan disposem de l’enllaç o codi oficial.",
+      "es": "Espacio preparado para incorporar enlaces o la integración de Forvenues cuando dispongamos del enlace o código oficial."
+    }
+  },
+  "eyebrows": {
+    "eyebrow01": {
+      "ca": "FESTIVEO PRODUCCIONS · REUS",
+      "es": "FESTIVEO PRODUCCIONS · REUS"
+    },
+    "eyebrow02": {
+      "ca": "FORVENUES",
+      "es": "FORVENUES"
+    }
+  },
+  "buttons": {}
+}

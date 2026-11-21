@@ -1,0 +1,43 @@
+{
+  "seo_title": {
+    "ca": "FESTIVEO Produccions · Serveis",
+    "es": "FESTIVEO Produccions · Servicios"
+  },
+  "seo_description": {
+    "ca": "FESTIVEO Produccions · Reus, Tarragona · Producció d’esdeveniments, espectacles i serveis tècnics.",
+    "es": "FESTIVEO Produccions · Reus, Tarragona · Producción de eventos, espectáculos y servicios técnicos."
+  },
+  "texts": {
+    "text01": {
+      "ca": "DE LA IDEA A <em>L’ESCENARI.</em>",
+      "es": "DE LA IDEA AL <em>ESCENARIO.</em>"
+    },
+    "text02": {
+      "ca": "T’acompanyem des del primer concepte fins a l’últim aplaudiment.",
+      "es": "Te acompañamos desde el primer concepto hasta el último aplauso."
+    },
+    "text03": {
+      "ca": "QUÈ FEM",
+      "es": "QUÉ HACEMOS"
+    },
+    "text04": {
+      "ca": "SERVEIS A MIDA.",
+      "es": "SERVICIOS A MEDIDA."
+    },
+    "text05": {
+      "ca": "DEMANA’NS PRESSUPOST",
+      "es": "PÍDENOS PRESUPUESTO"
+    }
+  },
+  "eyebrows": {
+    "eyebrow01": {
+      "ca": "FESTIVEO PRODUCCIONS · REUS",
+      "es": "FESTIVEO PRODUCCIONS · REUS"
+    }
+  },
+  "buttons": {
+    "button01": {
+      "href": "contacte.html"
+    }
+  }
+}

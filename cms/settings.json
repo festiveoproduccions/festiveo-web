@@ -1,0 +1,46 @@
+{
+  "logo": "/assets/logo.png",
+  "gold": "#dbb77b",
+  "background": "#080808",
+  "foreground": "#f5f2ed",
+  "hero_image": "",
+  "phone": "+34 662 106 794",
+  "email": "festiveoproduccions@gmail.com",
+  "location": "Reus, Tarragona",
+  "instagram": "",
+  "facebook": "",
+  "tiktok": "",
+  "forvenues_url": "",
+  "menu": [
+    {
+      "ca": "Inici",
+      "es": "Inicio",
+      "href": "index.html"
+    },
+    {
+      "ca": "Qui som",
+      "es": "Quiénes somos",
+      "href": "nosaltres.html"
+    },
+    {
+      "ca": "Serveis",
+      "es": "Servicios",
+      "href": "serveis.html"
+    },
+    {
+      "ca": "Esdeveniments",
+      "es": "Eventos",
+      "href": "esdeveniments.html"
+    },
+    {
+      "ca": "Artistes",
+      "es": "Artistas",
+      "href": "artistes.html"
+    },
+    {
+      "ca": "Contacte",
+      "es": "Contacto",
+      "href": "contacte.html"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "seo_title": {
+    "ca": "FESTIVEO Produccions · Contacte",
+    "es": "FESTIVEO Produccions · Contacto"
+  },
+  "seo_description": {
+    "ca": "FESTIVEO Produccions · Reus, Tarragona · Producció d’esdeveniments, espectacles i serveis tècnics.",
+    "es": "FESTIVEO Produccions · Reus, Tarragona · Producción de eventos, espectáculos y servicios técnicos."
+  },
+  "texts": {
+    "text01": {
+      "ca": "PARLEM DEL TEU <em>PROJECTE.</em>",
+      "es": "HABLEMOS DE TU <em>PROYECTO.</em>"
+    },
+    "text02": {
+      "ca": "Explica’ns què imagines i busquem com fer-ho realitat.",
+      "es": "Cuéntanos qué imaginas y buscamos cómo hacerlo realidad."
+    },
+    "text03": {
+      "ca": "CONTACTE I CONTRACTACIONS",
+      "es": "CONTACTO Y CONTRATACIONES"
+    },
+    "text04": {
+      "ca": "FEM-HO POSSIBLE.",
+      "es": "HAGÁMOSLO POSIBLE."
+    },
+    "text05": {
+      "ca": "Parlem?",
+      "es": "¿Hablamos?"
+    },
+    "text06": {
+      "ca": "Telèfon i WhatsApp",
+      "es": "Teléfono y WhatsApp"
+    },
+    "text07": {
+      "ca": "ENVIAR CORREU",
+      "es": "ENVIAR CORREO"
+    },
+    "text08": {
+      "ca": "Ubicació",
+      "es": "Ubicación"
+    },
+    "text09": {
+      "ca": "Treballem en projectes i esdeveniments segons les necessitats de cada client.",
+      "es": "Trabajamos en proyectos y eventos según las necesidades de cada cliente."
+    }
+  },
+  "eyebrows": {
+    "eyebrow01": {
+      "ca": "FESTIVEO PRODUCCIONS · REUS",
+      "es": "FESTIVEO PRODUCCIONS · REUS"
+    }
+  },
+  "buttons": {
+    "button01": {
+      "href": "https://wa.me/34662106794"
+    },
+    "button02": {
+      "href": "mailto:festiveoproduccions@gmail.com"
+    }
+  }
+}

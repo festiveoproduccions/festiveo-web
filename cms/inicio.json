@@ -1,0 +1,100 @@
+{
+  "seo_title": {
+    "ca": "FESTIVEO Produccions · Inici",
+    "es": "FESTIVEO Produccions · Inicio"
+  },
+  "seo_description": {
+    "ca": "FESTIVEO Produccions · Reus, Tarragona · Producció d’esdeveniments, espectacles i serveis tècnics.",
+    "es": "FESTIVEO Produccions · Reus, Tarragona · Producción de eventos, espectáculos y servicios técnicos."
+  },
+  "texts": {
+    "text01": {
+      "ca": "FEM QUE LES IDEES <em>COBRIN VIDA.</em>",
+      "es": "HACEMOS QUE LAS IDEAS <em>COBREN VIDA.</em>"
+    },
+    "text02": {
+      "ca": "Producció, realització i talent per convertir idees en experiències.",
+      "es": "Producción, realización y talento para convertir ideas en experiencias."
+    },
+    "text03": {
+      "ca": "ELS NOSTRES SERVEIS",
+      "es": "NUESTROS SERVICIOS"
+    },
+    "text04": {
+      "ca": "CONTACTA",
+      "es": "CONTACTA"
+    },
+    "text05": {
+      "ca": "CREATIVITAT, PRODUCCIÓ I EXPERIÈNCIA.",
+      "es": "CREATIVIDAD, PRODUCCIÓN Y EXPERIENCIA."
+    },
+    "text06": {
+      "ca": "Idees i producció",
+      "es": "Ideas y producción"
+    },
+    "text07": {
+      "ca": "Imaginem, planifiquem i executem esdeveniments de principi a fi.",
+      "es": "Imaginamos, planificamos y ejecutamos eventos de principio a fin."
+    },
+    "text08": {
+      "ca": "Suport tècnic",
+      "es": "Soporte técnico"
+    },
+    "text09": {
+      "ca": "So, il·luminació i animació adaptats a cada format.",
+      "es": "Sonido, iluminación y animación adaptados a cada formato."
+    },
+    "text10": {
+      "ca": "Talent i espectacles",
+      "es": "Talento y espectáculos"
+    },
+    "text11": {
+      "ca": "Artistes i grups col·laboradors per a experiències úniques.",
+      "es": "Artistas y grupos colaboradores para experiencias únicas."
+    },
+    "text12": {
+      "ca": "LA NOSTRA TRAJECTÒRIA",
+      "es": "NUESTRA TRAYECTORIA"
+    },
+    "text13": {
+      "ca": "UNA TEMPORADA PLENA D’HISTÒRIES.",
+      "es": "UNA TEMPORADA LLENA DE HISTORIAS."
+    },
+    "text14": {
+      "ca": "VENENO PARTY, DRAX i Ravalada Drag Tour Reus: coneix els projectes que formen part del nostre recorregut.",
+      "es": "VENENO PARTY, DRAX y Ravalada Drag Tour Reus: conoce los proyectos que forman parte de nuestro recorrido."
+    },
+    "text15": {
+      "ca": "VEURE ESDEVENIMENTS",
+      "es": "VER EVENTOS"
+    }
+  },
+  "eyebrows": {
+    "eyebrow01": {
+      "ca": "FESTIVEO PRODUCCIONS · REUS",
+      "es": "FESTIVEO PRODUCCIONS · REUS"
+    },
+    "eyebrow02": {
+      "ca": "01 / FESTIVEO",
+      "es": "01 / FESTIVEO"
+    },
+    "eyebrow03": {
+      "ca": "2026 / 2027",
+      "es": "2026 / 2027"
+    }
+  },
+  "buttons": {
+    "button01": {
+      "href": "serveis.html"
+    },
+    "button02": {
+      "href": "contacte.html"
+    },
+    "button03": {
+      "href": "nosaltres.html"
+    },
+    "button04": {
+      "href": "esdeveniments.html"
+    }
+  }
+}
