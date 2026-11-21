@@ -5,8 +5,8 @@
         "/images/images.jpg"
       ],
       "date_label": {
-        "ca": "29 de novembre de 2026",
-        "es": "29 de noviembre de 2026"
+        "ca": "29 Novembre de 2026",
+        "es": "29 Noviembre de 2026"
       },
       "verified": false,
       "date": "29/11/2026",
@@ -53,7 +53,7 @@
       },
       "date": "Octubre 2026",
       "url": "",
-      "sort_date": "2026-10",
+      "sort_date": "2026-10-10",
       "status": "past",
       "location": "Reus",
       "title": {
@@ -74,7 +74,7 @@
       },
       "date": "Septiembre 2026",
       "url": "",
-      "sort_date": "2026-09",
+      "sort_date": "2026-09-12",
       "status": "past",
       "location": "Sala Xtraperlo · Reus",
       "title": {
@@ -88,6 +88,26 @@
       "category": "drax"
     },
     {
+      "date_label": {
+        "ca": "Setembre 2026",
+        "es": "Septiembre 2026"
+      },
+      "verified": true,
+      "date": "Septiembre 2026",
+      "sort_date": "2026-09-05",
+      "status": "past",
+      "location": "Sala Zero · Tarragona",
+      "title": {
+        "ca": "VENENO: Summer Edition",
+        "es": "VENENO: Summer Edition"
+      },
+      "description": {
+        "es": "VENENO SUMMER EDITION llevó la esencia de VENENO PARTY a Sala Zero de Tarragona el 5 de septiembre de 2026. Una noche llena de música, espectáculo drag, diversidad y mucha fiesta, donde el talento y la libertad fueron los grandes protagonistas.",
+        "ca": "VENENO SUMMER EDITION va portar l'essència de VENENO PARTY a la Sala Zero de Tarragona el 5 de setembre de 2026. Una nit plena de música, espectacle drag, diversitat i molta festa, on el talent i la llibertat van ser els grans protagonistes."
+      },
+      "category": "veneno"
+    },
+    {
       "photos": [],
       "date_label": {
         "ca": "Agost 2026",
@@ -95,7 +115,7 @@
       },
       "date": "Agosto 2026",
       "url": "",
-      "sort_date": "2026-08",
+      "sort_date": "2026-08-08",
       "status": "past",
       "location": "Sala Xtraperlo · Reus",
       "title": {
@@ -116,7 +136,7 @@
       },
       "date": "Julio 2026",
       "url": "",
-      "sort_date": "2026-07",
+      "sort_date": "2026-07-11",
       "status": "past",
       "location": "Sala Xtraperlo · Reus",
       "title": {
@@ -137,7 +157,7 @@
       },
       "date": "Junio 2026",
       "url": "",
-      "sort_date": "2026-06",
+      "sort_date": "2026-06-06",
       "status": "past",
       "location": "Sala Xtraperlo · Reus",
       "title": {
@@ -158,7 +178,7 @@
       },
       "date": "Mayo 2026",
       "url": "",
-      "sort_date": "2026-05",
+      "sort_date": "2026-05-22",
       "status": "past",
       "location": "",
       "title": {
@@ -179,7 +199,7 @@
       },
       "date": "Abril 2026",
       "url": "",
-      "sort_date": "2026-04",
+      "sort_date": "2026-04-30",
       "status": "past",
       "location": "Sala Xtraperlo · Reus",
       "title": {
@@ -200,7 +220,7 @@
       },
       "date": "Marzo 2026",
       "url": "",
-      "sort_date": "2026-03",
+      "sort_date": "2026-03-07",
       "status": "past",
       "location": "Sala Xtraperlo · Reus",
       "title": {
@@ -242,7 +262,7 @@
       },
       "date": "Enero 2025",
       "url": "",
-      "sort_date": "2025-01",
+      "sort_date": "2025-01-19",
       "status": "past",
       "location": "",
       "title": {
