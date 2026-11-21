@@ -2,7 +2,7 @@
   "items": [
     {
       "photos": [
-        "/images/photo_web-14.png"
+        "/images/photo_web - 14(1).png"
       ],
       "date_label": {
         "ca": "29 Novembre de 2026",
@@ -26,8 +26,8 @@
     },
     {
       "photos": [
-        "/images/photo_web-12.png",
-        "/images/photo_web-13.png"
+        "/images/photo_web - 14.png",
+        "/images/photo_web - 13.png"
       ],
       "date_label": {
         "ca": "Novembre 2026",
@@ -51,7 +51,7 @@
     },
     {
       "photos": [
-        "/images/photo_web-11.png"
+        "/images/photo_web - 11.png"
       ],
       "date_label": {
         "ca": "Octubre 2026",
@@ -75,8 +75,8 @@
     },
     {
       "photos": [
-        "/images/photo_web-9.png",
-        "/images/photo_web-10.png"
+        "/images/photo_web - 9(1).png",
+        "/images/photo_web - 10.png"
       ],
       "date_label": {
         "ca": "Setembre 2026",
@@ -100,8 +100,8 @@
     },
     {
       "photos": [
-        "/images/photo_web-7.png",
-        "/images/photo_web-8.png"
+        "/images/photo_web - 9.png",
+        "/images/photo_web - 8.png"
       ],
       "date_label": {
         "ca": "Setembre 2026",
@@ -124,7 +124,7 @@
     },
     {
       "photos": [
-        "/images/photo_web-6.png"
+        "/images/photo_web - 6.png"
       ],
       "date_label": {
         "ca": "Agost 2026",
@@ -148,7 +148,7 @@
     },
     {
       "photos": [
-        "/images/photo_web-5.png"
+        "/images/photo_web - 5.png"
       ],
       "date_label": {
         "ca": "Juliol 2026",
@@ -172,7 +172,7 @@
     },
     {
       "photos": [
-        "/images/photo_web-4.png"
+        "/images/photo_web - 4.png"
       ],
       "date_label": {
         "ca": "Juny 2026",
@@ -196,7 +196,7 @@
     },
     {
       "photos": [
-        "/images/photo_web-3.png"
+        "/images/photo_web - 3.png"
       ],
       "date_label": {
         "ca": "Maig 2026",
@@ -220,7 +220,7 @@
     },
     {
       "photos": [
-        "/images/photo_web-2.png"
+        "/images/photo_web - 2(1).png"
       ],
       "date_label": {
         "ca": "Abril 2026",
@@ -244,7 +244,7 @@
     },
     {
       "photos": [
-        "/images/photo_web-1.png"
+        "/images/photo_web - 1(1).png"
       ],
       "date_label": {
         "ca": "Març 2026",
@@ -267,11 +267,14 @@
       "category": "veneno"
     },
     {
-      "photos": [],
+      "photos": [
+        "/images/photo_web - 2.png"
+      ],
       "date_label": {
         "ca": "Juliol 2025",
         "es": "Julio 2025"
       },
+      "verified": true,
       "date": "Julio 2025",
       "url": "",
       "sort_date": "2025-07",
@@ -288,16 +291,19 @@
       "category": "otros"
     },
     {
-      "photos": [],
+      "photos": [
+        "/images/photo_web - 1.png"
+      ],
       "date_label": {
         "ca": "Gener 2025",
         "es": "Enero 2025"
       },
+      "verified": true,
       "date": "Enero 2025",
       "url": "",
       "sort_date": "2025-01-19",
       "status": "past",
-      "location": "",
+      "location": "Sala Santa Llucia · Reus",
       "title": {
         "ca": "Gala solidària DANA",
         "es": "Gala solidaria DANA"
