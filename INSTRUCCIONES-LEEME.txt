@@ -1,0 +1,105 @@
+FESTIVEO PRODUCCIONS 2027 · VERSIÓN INTEGRAL 2.0
+====================================================
+
+PREPARADA PARA EL PROYECTO EXISTENTE:
+- GitHub: festiveoproduccions/festiveo-web
+- Cloudflare: festiveo-git.festiveoproduccions.workers.dev
+- Acceso: /admin/
+- OAuth: Worker ya creado por el propietario, festiveo-auth
+
+INSTALACIÓN EN UNA SOLA ACTUALIZACIÓN
+----------------------------------
+1. Antes de sustituir nada, entra en GitHub y descarga una copia de seguridad
+   del repositorio actual (Code > Download ZIP). Así conservas un respaldo.
+2. Descarga y DESCOMPRIME este ZIP en tu ordenador.
+3. En GitHub, abre el repositorio festiveoproduccions/festiveo-web.
+4. Pulsa Add file > Upload files y arrastra TODO EL CONTENIDO extraído
+   (los seis HTML, app.js, styles.css, assets, cms, admin, etc.).
+   NO arrastres la carpeta contenedora ni subas el ZIP como archivo.
+5. Confirma que index.html queda en la RAÍZ, y que existen estos directorios:
+   admin/index.html, admin/config.yml, assets/logo.png y cms/inicio.json.
+6. Confirma con Commit changes. Cloudflare publicará desde la rama main.
+7. Comprueba portada, menú, CAT/ES y las páginas de servicios y eventos.
+8. Accede a /admin/ y comprueba la vista previa en '02 · Inicio'.
+
+ESTO REEMPLAZA TODOS LOS ARCHIVOS WEB DE LA VERSIÓN ANTERIOR.
+EL WORKER festiveo-auth ES SEPARADO: no lo borres ni modifiques.
+NO INTRODUZCAS SECRETOS NI CONTRASEÑAS EN GITHUB.
+
+ADMINISTRACIÓN
+--------------
+01 · Diseño y ajustes: logo, colores, portada, contacto, redes, Forvenues, menú.
+02 · Inicio: textos de portada, botones y titulares CAT/ES.
+03 · Quiénes somos: trayectoria VENENO 1+2, 7 DRAX, Ravalada Drag Tour Reus 2026.
+04 · Servicios: textos y lista editable de seis servicios.
+05 · Artistas: textos, perfiles, fotografías y enlaces.
+06 · Eventos: texto, fechas, galería de fotos y enlaces de entradas.
+07 · Contacto: textos; datos principales desde Diseño y ajustes.
+
+Al guardar desde el administrador, Decap CMS modifica los JSON de GitHub,
+y Cloudflare publica automáticamente. La imagen de vista previa muestra la
+página REAL dentro del marco del editor: se puede DESPLAZAR por ella.
+El idioma CAT/ES se puede cambiar tanto en la web como dentro de la preview.
+Los cambios sin guardar se reflejan en esa ventana mientras editas.
+
+La vista previa se muestra a una anchura inferior a la web de escritorio porque
+ocupa medio panel. Es normal que el menú se convierta en menú de móvil y los
+bloques pasen a una columna. La cabecera y el titular deben ser visibles.
+
+MEDIOS Y GALERÍAS
+-----------------
+En Decap CMS, utiliza el selector Imagen de cada sección. Las fotos nuevas
+se guardan en la carpeta /images de GitHub y se muestran en la web.
+Los eventos admiten varias fotografías. La primera es la portada de la ficha.
+
+FORVENUES
+---------
+Introduce la dirección HTTPS de Forvenues en 01 · Diseño y ajustes. Aparecerá
+un botón de entradas en la página Eventos. Cada evento también puede tener
+su propio enlace de entradas. Esta versión NO requiere ni presupone un código
+de inserción o API de Forvenues. No hay integración directa del checkout.
+
+CONTACTO OFICIAL
+----------------
+Teléfono y WhatsApp: +34 662 106 794
+Correo: festiveoproduccions@gmail.com
+Ubicación: Reus, Tarragona
+
+PRECIO Y SERVICIOS
+------------------
+El código y el panel Decap CMS son gratuitos; Cloudflare Workers/Pages y
+GitHub permiten el uso gratuito dentro de sus límites vigentes. Los dominios
+y los servicios de terceros pueden tener coste.
+
+SEGURIDAD
+---------
+El panel necesita el OAuth de GitHub ya configurado en Cloudflare Worker.
+La dirección /admin es pública, pero modificar el repositorio requiere una
+cuenta autorizada. No incluyas nunca Client Secrets en archivos de GitHub.
+Si un token de GitHub apareció previamente en una captura, revoca la
+aplicación OAuth FESTIVEO Admin en https://github.com/settings/applications
+y vuelve a autorizar el panel.
+
+LIMITACIONES
+------------
+- La previsualización del código se comprobó localmente con navegador, pero
+  requiere comprobación final en el Cloudflare y GitHub reales.
+- Es posible editar todas las secciones indicadas. Crear una página nueva o
+  cambiar por completo la estructura de diseño requiere desarrollo adicional.
+- La compra de entradas es un enlace externo; no se inventan URLs de venta.
+- No se han incorporado fotos de eventos no facilitadas por el propietario.
+- No se ha añadido un formulario que almacene datos: contacto por email o WhatsApp.
+- Comprueba los requisitos legales aplicables antes del lanzamiento comercial.
+
+ESTRUCTURA
+----------
+index.html / nosaltres.html / serveis.html / esdeveniments.html /
+artistes.html / contacte.html  = páginas independientes
+app.js                          = motor bilingüe y vista previa
+styles.css                      = diseño responsive negro y dorado
+cms/*.json                      = todos los contenidos editables
+admin/config.yml                = configuración del CMS
+admin/index.html                = editor y vista previa de la web real
+assets/logo.png                 = logo original recortado para cabecera (sin rediseñarlo)
+logo.png                        = copia para compatibilidad
+images/                         = fotos que subas desde el panel

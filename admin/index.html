@@ -1,187 +1,65 @@
 <!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>FESTIVEO | Administración</title>
-</head>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080808"><title>FESTIVEO · Administración</title></head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
-  (function () {
+  (function(){
     'use strict';
-    var CMS = window.CMS;
-    var h = window.h;
-    if (!CMS || !h) return;
-    var paths = {
-      inicio: 'index.html', nosaltres: 'nosaltres.html',
-      servicios: 'serveis.html', artistas: 'artistes.html',
-      eventos: 'esdeveniments.html', contacto: 'contacte.html',
-      apariencia: 'index.html'
-    };
-    var label = {
-      inicio: 'Inicio', nosaltres: 'Quiénes somos', servicios: 'Servicios',
-      artistas: 'Artistas', eventos: 'Eventos', contacto: 'Contacto',
-      apariencia: 'Diseño y ajustes'
-    };
-    function dataFor(props) {
-      var map = props.entry && props.entry.get('data');
-      return map && typeof map.toJS === 'function' ? map.toJS() : {};
+    var CMS=window.CMS,h=window.h;
+    if(!CMS||!h){console.error('Decap CMS no ha terminado de cargar.');return;}
+    var routes={apariencia:'index.html',inicio:'index.html',nosaltres:'nosaltres.html',servicios:'serveis.html',artistas:'artistes.html',eventos:'esdeveniments.html',contacto:'contacte.html'};
+    var names={apariencia:'Diseño y ajustes',inicio:'Inicio',nosaltres:'Quiénes somos',servicios:'Servicios',artistas:'Artistas',eventos:'Eventos',contacto:'Contacto'};
+    var latest=new WeakMap();
+    function scope(){var m=location.hash.match(/collections\/([^\/]+)/);return m?m[1]:'inicio';}
+    function entryData(props){var entry=props.entry&&props.entry.get('data');return entry&&entry.toJS?entry.toJS():{};}
+    function asset(props,path){if(!path)return path;try{var a=props.getAsset(path);return a&&a.toString?a.toString():path;}catch(e){return path;}}
+    function normalize(props,kind){
+      var data=entryData(props);
+      if(kind==='ajustes'){
+        if(data.logo)data.logo=asset(props,data.logo);
+        if(data.hero_image)data.hero_image=asset(props,data.hero_image);
+      }
+      if(kind==='listado'||kind==='listado_eventos'){
+        (data.items||[]).forEach(function(item){
+          if(item.image)item.image=asset(props,item.image);
+          if(Array.isArray(item.photos))item.photos=item.photos.map(function(ph){return typeof ph==='string'?asset(props,ph):ph&&ph.image?{image:asset(props,ph.image)}:ph;});
+        });
+      }
+      return data;
     }
-    function section() {
-      var match = window.location.hash.match(/collections\/([^\/]+)/);
-      return match ? match[1] : 'inicio';
+    function push(frame){
+      if(!frame||!frame.contentWindow)return;
+      var x=latest.get(frame);if(!x)return;
+      try{frame.contentWindow.postMessage({type:'festiveo:preview-draft',scope:x.scope,name:x.name,content:x.data},location.origin);}catch(e){console.warn('No se pudo sincronizar la vista previa',e);}
     }
-    function localized(value, lang) {
-      if (typeof value === 'string') return value;
-      return value && (value[lang] || value.ca || value.es) || '';
-    }
-    function isImage(url) {
-      return typeof url === 'string' && (/^https:\/\//i.test(url) || /^\/(?!\/)/.test(url) || /^(images|assets)\//.test(url) || /^blob:/i.test(url));
-    }
-    function isHref(value) {
-      return typeof value === 'string' && (/^https:\/\//i.test(value) || /^(?!\/)[\w.\-/]+(?:[?#][^\s]*)?$/.test(value));
-    }
-    function asset(props,path) {
-      if (!path) return '';
-      try {
-        var a = props.getAsset(path);
-        return a && typeof a.toString === 'function' ? a.toString() : path;
-      } catch (e) {return path;}
-    }
-    function safeSet(doc,node,text) {
-      var parts = String(text || '').split(/(<em>[\s\S]*?<\/em>)/gi);
-      node.replaceChildren.apply(node, parts.map(function(part) {
-        if (/^<em>[\s\S]*<\/em>$/i.test(part)) {
-          var em = doc.createElement('em');
-          em.textContent = part.slice(4,-5);
-          return em;
-        }
-        return doc.createTextNode(part);
-      }));
-    }
-    function pageDraft(doc, data, sec) {
-      var lang = doc.documentElement.lang === 'es' ? 'es' : 'ca';
-      var texts = data.texts || {};
-      var spans = Array.prototype.slice.call(doc.querySelectorAll('main [data-ca][data-es]'));
-      if (sec === 'servicios') spans = spans.filter(function(el) {return !el.closest('.service-grid');});
-      spans.forEach(function(el,i) {
-        var key = 'text' + String(i+1).padStart(2,'0');
-        var value = texts[key];
-        if (!value) return;
-        el.setAttribute('data-ca', value.ca || '');
-        el.setAttribute('data-es', value.es || '');
-        safeSet(doc,el,localized(value,lang));
-      });
-      var plain=0;
-      doc.querySelectorAll('main .eyebrow').forEach(function(el){
-        if (el.querySelector('[data-ca][data-es]')) return;
-        plain++;
-        var key='eyebrow'+String(plain).padStart(2,'0');
-        if (data.eyebrows && data.eyebrows[key]) el.textContent=localized(data.eyebrows[key],lang);
-      });
-      doc.querySelectorAll('main a.button').forEach(function(link,i) {
-        var key='button'+String(i+1).padStart(2,'0');
-        var href=data.buttons && data.buttons[key] && data.buttons[key].href;
-        if (isHref(href)) link.href=href;
-      });
-    }
-    function appearanceDraft(doc,data,props) {
-      ['gold','background','foreground'].forEach(function(key) {
-        var css={gold:'--gold',background:'--black',foreground:'--white'}[key];
-        if (/^#[0-9a-f]{6}$/i.test(data[key]||'')) doc.documentElement.style.setProperty(css,data[key]);
-      });
-      if (isImage(data.logo)) doc.querySelectorAll('.brand img').forEach(function(el){el.src=asset(props,data.logo)});
-      if (isImage(data.hero_image)) doc.querySelectorAll('.hero').forEach(function(el){
-        el.style.backgroundImage='linear-gradient(90deg,rgba(0,0,0,.8),rgba(0,0,0,.4)),url("'+asset(props,data.hero_image).replace(/["\\]/g,'')+'")';
-        el.style.backgroundSize='cover';
-        el.style.backgroundPosition='center';
-      });
-      var phone=String(data.phone||''),digits=phone.replace(/[^+\d]/g,'');
-      if(digits)doc.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.href='tel:'+digits;a.textContent=phone});
-      var email=String(data.email||'').trim();
-      if(email&&email.indexOf('@')!==-1)doc.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-        a.href='mailto:'+email;if(a.closest('footer')||a.classList.contains('contact-link'))a.textContent=email;
-      });
-      if(Array.isArray(data.menu))doc.querySelectorAll('#nav a').forEach(function(a,i){
-        var item=data.menu[i];if(!item)return;
-        var text=a.querySelector('[data-ca][data-es]');
-        if(text){text.setAttribute('data-ca',item.ca||'');text.setAttribute('data-es',item.es||'');safeSet(doc,text,localized(item,doc.documentElement.lang==='es'?'es':'ca'))}
-        if(isHref(item.href))a.href=item.href;
-      });
-    }
-    function itemList(doc,items,type,props) {
-      if (!Array.isArray(items)) return;
-      var root = type==='servicios' ? doc.querySelector('main .service-grid') :
-        type==='artistas' ? doc.getElementById('cms-artists') : doc.getElementById('event-gallery');
-      if (!root) return;
-      var lang = doc.documentElement.lang==='es'?'es':'ca';
-      root.replaceChildren();
-      items.forEach(function(item){
-        var card=doc.createElement('article');card.className=type==='eventos'?'event-card':'feature';
-        var image=item.image || (Array.isArray(item.photos) && item.photos[0]);
-        if(image && typeof image==='object') image=image.image;
-        if(isImage(image)){
-          var img=doc.createElement('img');img.src=asset(props,image);img.loading='lazy';
-          img.alt=localized(item.title||item.name,lang);
-          if(type!=='eventos'){img.style.width='100%';img.style.aspectRatio='4/3';img.style.objectFit='cover';}
-          card.append(img);
-        }
-        var inner=doc.createElement('div');if(type==='eventos')inner.className='event-info';
-        if(item.date){var date=doc.createElement('span');date.className='event-date';date.textContent=item.date;inner.append(date)}
-        var head=doc.createElement('h3');head.textContent=localized(item.title||item.name,lang);inner.append(head);
-        var desc=doc.createElement('p');desc.textContent=localized(item.description||item.bio,lang);inner.append(desc);
-        if(isHref(item.url)){
-          var a=doc.createElement('a');a.href=item.url;a.className='button outline';
-          a.textContent=lang==='ca'?'MÉS INFORMACIÓ':'MÁS INFORMACIÓN';inner.append(a);
-        }
-        card.append(inner);root.append(card);
-      });
-    }
-    function apply(frame,props,mode,sec) {
-      if (!frame || !frame.contentDocument || !frame.contentDocument.querySelector('.header'))return;
-      var doc=frame.contentDocument,d=dataFor(props);
-      try{
-        if(mode==='page')pageDraft(doc,d,sec);
-        else if(mode==='settings')appearanceDraft(doc,d,props);
-        else if(mode==='list')itemList(doc,d.items,sec,props);
-        // Prevent navigation outside the preview while allowing the language selector.
-        if(!doc.documentElement.dataset.previewGuard){
-          doc.documentElement.dataset.previewGuard='1';
-          doc.addEventListener('click',function(e){if(e.target.closest('a'))e.preventDefault()},true);
-        }
-        // The public page loads its JSON asynchronously. Reapply draft after those loads.
-        frame.style.height=Math.max(650,Math.min(doc.documentElement.scrollHeight+40,4800))+'px';
-      }catch(error){console.error('FESTIVEO vista previa:',error)}
-    }
-    function preview(props,mode,forcedSection){
-      var sec=forcedSection||section();var path=paths[sec]||'index.html';
-      var rerender=function(frame){
-        if(!frame)return;
-        apply(frame,props,mode,sec);
-      };
-      return h('div',{style:{background:'#080808',color:'#f5f2ed',fontFamily:'Arial, sans-serif',minHeight:680}},
-        h('div',{style:{padding:'12px 16px',background:'#15120f',borderBottom:'1px solid #dbb77b',fontSize:12}},
-          'VISTA PREVIA · '+label[sec]+' · Diseño de la web real (ancho del panel)'),
+    // El motor real de la web recibe los borradores. No usamos otra plantilla aproximada.
+    window.addEventListener('message',function(event){
+      if(event.origin!==location.origin||event.data?.type!=='festiveo:preview-ready')return;
+      document.querySelectorAll('iframe[data-festiveo-preview]').forEach(function(frame){if(frame.contentWindow===event.source)push(frame);});
+    });
+    function show(props,name,forcedScope){
+      var area=forcedScope||scope(),url='/'+(routes[area]||'index.html')+'?cms-preview=1';
+      var draft=normalize(props,name);
+      return h('div',{style:{background:'#080808',color:'#f5f2ed',fontFamily:'Arial,sans-serif',minHeight:700}},
+        h('div',{style:{background:'#17130e',borderBottom:'1px solid #dbb77b',padding:'12px 15px',fontSize:12,lineHeight:1.5}},
+          'VISTA PREVIA REAL · '+(names[area]||'FESTIVEO')+' · Desplázate dentro de la página. CAT / ES funciona.'),
         h('iframe',{
-          title:'Vista previa de '+label[sec],
-          src:'/'+path,
-          style:{display:'block',width:'100%',border:0,minHeight:650,background:'#080808'},
-          ref:function(frame){if(frame){window.setTimeout(function(){rerender(frame)},30)}},
-          onLoad:function(e){
-            var frame=e.currentTarget;
-            rerender(frame);
-            window.setTimeout(function(){rerender(frame)},350);
-            window.setTimeout(function(){rerender(frame)},1000);
-          }
+          title:'Vista previa de '+(names[area]||'FESTIVEO'),src:url,'data-festiveo-preview':'1',
+          style:{display:'block',width:'100%',height:'710px',minHeight:'710px',border:0,background:'#080808'},
+          ref:function(frame){
+            if(!frame)return;
+            latest.set(frame,{scope:area,name:name,data:draft});
+            // El mismo iframe se reutiliza al editar: enviar siempre la última versión.
+            push(frame);
+          },
+          onLoad:function(event){var frame=event.currentTarget;latest.set(frame,{scope:area,name:name,data:draft});push(frame);setTimeout(function(){push(frame)},250);}
         })
       );
     }
-    CMS.registerPreviewTemplate('pagina', function(props){return preview(props,'page')});
-    CMS.registerPreviewTemplate('ajustes', function(props){return preview(props,'settings','apariencia')});
-    CMS.registerPreviewTemplate('listado', function(props){return preview(props,'list',section())});
-    CMS.registerPreviewTemplate('listado_eventos', function(props){return preview(props,'list','eventos')});
-  }());
+    CMS.registerPreviewTemplate('pagina',function(props){return show(props,'pagina');});
+    CMS.registerPreviewTemplate('ajustes',function(props){return show(props,'ajustes','apariencia');});
+    CMS.registerPreviewTemplate('listado',function(props){return show(props,'listado');});
+    CMS.registerPreviewTemplate('listado_eventos',function(props){return show(props,'listado_eventos','eventos');});
+  })();
   </script>
-</body>
-</html>
+</body></html>
