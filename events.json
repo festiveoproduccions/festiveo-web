@@ -1,41 +1,44 @@
-  {
-    "items": [
-    "date": "2026",
-    "title": {
-      "ca": "VENENO PARTY · Edicions 1 i 2",
-      "es": "VENENO PARTY · Ediciones 1 y 2"
+
+{
+  "items": [
+    {
+      "date": "2026",
+      "title": {
+        "ca": "VENENO PARTY · Edicions 1 i 2",
+        "es": "VENENO PARTY · Ediciones 1 y 2"
+      },
+      "description": {
+        "ca": "Dues edicions de festa i espectacle.",
+        "es": "Dos ediciones de fiesta y espectáculo."
+      },
+      "photos": [],
+      "url": ""
     },
-    "description": {
-      "ca": "Dues edicions de festa i espectacle.",
-      "es": "Dos ediciones de fiesta y espectáculo."
+    {
+      "date": "2026",
+      "title": {
+        "ca": "DRAX · 7 edicions",
+        "es": "DRAX · 7 ediciones"
+      },
+      "description": {
+        "ca": "Set edicions dedicades a l’art drag.",
+        "es": "Siete ediciones dedicadas al arte drag."
+      },
+      "photos": [],
+      "url": ""
     },
-    "photos": [],
-    "url": ""
-  },
-  {
-    "date": "2026",
-    "title": {
-      "ca": "DRAX · 7 edicions",
-      "es": "DRAX · 7 ediciones"
-    },
-    "description": {
-      "ca": "Set edicions dedicades a l’art drag.",
-      "es": "Siete ediciones dedicadas al arte drag."
-    },
-    "photos": [],
-    "url": ""
-  },
-  {
-    "date": "2026",
-    "title": {
-      "ca": "Ravalada Drag Tour Reus 2026",
-      "es": "Ravalada Drag Tour Reus 2026"
-    },
-    "description": {
-      "ca": "Projecte de la trajectòria FESTIVEO 2026.",
-      "es": "Proyecto de la trayectoria FESTIVEO 2026."
-    },
-    "photos": [],
-    "url": ""
-    ]
-  }
+    {
+      "date": "2026",
+      "title": {
+        "ca": "Ravalada Drag Tour Reus 2026",
+        "es": "Ravalada Drag Tour Reus 2026"
+      },
+      "description": {
+        "ca": "Projecte de la trajectòria FESTIVEO 2026.",
+        "es": "Proyecto de la trayectoria FESTIVEO 2026."
+      },
+      "photos": [],
+      "url": ""
+    }
+  ]
+}
