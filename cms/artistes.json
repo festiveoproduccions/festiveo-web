@@ -1,67 +1,28 @@
 {
-  "seo_title": {
-    "ca": "FESTIVEO Produccions · Artistes",
-    "es": "FESTIVEO Produccions · Artistas"
-  },
-  "seo_description": {
-    "ca": "FESTIVEO Produccions · Reus, Tarragona · Producció d’esdeveniments, espectacles i serveis tècnics.",
-    "es": "FESTIVEO Produccions · Reus, Tarragona · Producción de eventos, espectáculos y servicios técnicos."
-  },
-  "texts": {
-    "text01": {
-      "ca": "TALENT QUE <em>CONNECTA.</em>",
-      "es": "TALENTO QUE <em>CONECTA.</em>"
+  "hero": {
+    "kicker": {
+      "ca": "TALENT I COL·LABORACIONS",
+      "es": "TALENTO Y COLABORACIONES"
     },
-    "text02": {
-      "ca": "Artistes, grups i col·laboradors per donar personalitat a cada esdeveniment.",
-      "es": "Artistas, grupos y colaboradores para dar personalidad a cada evento."
+    "title": {
+      "ca": "EL TALENT FA <em>LA DIFERÈNCIA.</em>",
+      "es": "EL TALENTO MARCA <em>LA DIFERENCIA.</em>"
     },
-    "text03": {
-      "ca": "COL·LABORADORS",
-      "es": "COLABORADORES"
-    },
-    "text04": {
-      "ca": "CADA PROJECTE MEREIX EL SEU TALENT.",
-      "es": "CADA PROYECTO MERECE SU TALENTO."
-    },
-    "text05": {
-      "ca": "Comptem amb artistes, grups i professionals col·laboradors per adaptar l’animació i els espectacles a cada esdeveniment.",
-      "es": "Contamos con artistas, grupos y profesionales colaboradores para adaptar la animación y los espectáculos a cada evento."
-    },
-    "text06": {
-      "ca": "Artistes escènics",
-      "es": "Artistas escénicos"
-    },
-    "text07": {
-      "ca": "Actuacions i propostes per a diferents públics.",
-      "es": "Actuaciones y propuestas para diferentes públicos."
-    },
-    "text08": {
-      "ca": "DJs i animació",
-      "es": "DJs y animación"
-    },
-    "text09": {
-      "ca": "Música i dinamització per a celebracions i festes.",
-      "es": "Música y dinamización para celebraciones y fiestas."
-    },
-    "text10": {
-      "ca": "Grups col·laboradors",
-      "es": "Grupos colaboradores"
-    },
-    "text11": {
-      "ca": "Formacions i propostes per amenitzar esdeveniments.",
-      "es": "Formaciones y propuestas para amenizar eventos."
-    },
-    "text12": {
-      "ca": "Les fitxes individuals s’afegiran quan tinguem les fotografies i dades autoritzades de cada artista.",
-      "es": "Las fichas individuales se añadirán cuando tengamos las fotografías y datos autorizados de cada artista."
+    "subtitle": {
+      "ca": "Artistes, grups i professionals que donen personalitat a cada producció.",
+      "es": "Artistas, grupos y profesionales que dan personalidad a cada producción."
     }
   },
-  "eyebrows": {
-    "eyebrow01": {
-      "ca": "FESTIVEO PRODUCCIONS · REUS",
-      "es": "FESTIVEO PRODUCCIONS · REUS"
-    }
+  "intro_title": {
+    "ca": "CADA ESDEVENIMENT TÉ EL SEU CARTELL.",
+    "es": "CADA EVENTO TIENE SU CARTEL."
   },
-  "buttons": {}
+  "intro_text": {
+    "ca": "Treballem amb una xarxa de DJs, artistes drag, animadores, performers i formacions que podem adaptar al públic i al format.",
+    "es": "Trabajamos con una red de DJs, artistas drag, animadores, performers y formaciones que podemos adaptar al público y al formato."
+  },
+  "cta_title": {
+    "ca": "BUSQUES TALENT PER AL TEU ESDEVENIMENT?",
+    "es": "¿BUSCAS TALENTO PARA TU EVENTO?"
+  }
 }

@@ -1,51 +1,40 @@
 {
-  "seo_title": {
-    "ca": "FESTIVEO Produccions · Esdeveniments",
-    "es": "FESTIVEO Produccions · Eventos"
-  },
-  "seo_description": {
-    "ca": "FESTIVEO Produccions · Reus, Tarragona · Producció d’esdeveniments, espectacles i serveis tècnics.",
-    "es": "FESTIVEO Produccions · Reus, Tarragona · Producción de eventos, espectáculos y servicios técnicos."
-  },
-  "texts": {
-    "text01": {
-      "ca": "ELS NOSTRES <em>PROJECTES.</em>",
-      "es": "NUESTROS <em>PROYECTOS.</em>"
+  "hero": {
+    "kicker": {
+      "ca": "PROJECTES I TRAJECTÒRIA",
+      "es": "PROYECTOS Y TRAYECTORIA"
     },
-    "text02": {
-      "ca": "Una galeria viva dels esdeveniments i espectacles que produïm.",
-      "es": "Una galería viva de los eventos y espectáculos que producimos."
+    "title": {
+      "ca": "EL QUE HEM FET. <em>EL QUE VE.</em>",
+      "es": "LO QUE HEMOS HECHO. <em>LO QUE VIENE.</em>"
     },
-    "text03": {
-      "ca": "ARXIU I GALERIA",
-      "es": "ARCHIVO Y GALERÍA"
-    },
-    "text04": {
-      "ca": "ESDEVENIMENTS 2026",
-      "es": "EVENTOS 2026"
-    },
-    "text05": {
-      "ca": "Afegeix o modifica esdeveniments i fotografies des del panell d’administració.",
-      "es": "Añade o modifica eventos y fotografías desde el panel de administración."
-    },
-    "text06": {
-      "ca": "ENTRADES I RESERVES.",
-      "es": "ENTRADAS Y RESERVAS."
-    },
-    "text07": {
-      "ca": "Espai preparat per incorporar enllaços o la integració de Forvenues quan disposem de l’enllaç o codi oficial.",
-      "es": "Espacio preparado para incorporar enlaces o la integración de Forvenues cuando dispongamos del enlace o código oficial."
+    "subtitle": {
+      "ca": "Un arxiu viu de festes, espectacles i projectes que ens acompanyen des de 2025.",
+      "es": "Un archivo vivo de fiestas, espectáculos y proyectos que nos acompañan desde 2025."
     }
   },
-  "eyebrows": {
-    "eyebrow01": {
-      "ca": "FESTIVEO PRODUCCIONS · REUS",
-      "es": "FESTIVEO PRODUCCIONS · REUS"
-    },
-    "eyebrow02": {
-      "ca": "FORVENUES",
-      "es": "FORVENUES"
-    }
+  "intro_title": {
+    "ca": "2025–2026. <em>CADA PROJECTE COMPTA.</em>",
+    "es": "2025–2026. <em>CADA PROYECTO CUENTA.</em>"
   },
-  "buttons": {}
+  "intro_text": {
+    "ca": "De la gala solidària DANA i els tardeos de Tarragona a VENENO Party, DRAX, Nochentera, RED ROOM i Ravalada x FESTIVEO. Els darrers esdeveniments apareixen primer, i cada fitxa pot tenir fins a tres fotografies.",
+    "es": "Desde la gala solidaria DANA y los tardeos de Tarragona hasta VENENO Party, DRAX, Nochentera, RED ROOM y Ravalada x FESTIVEO. Los últimos eventos aparecen primero, y cada ficha puede tener hasta tres fotografías."
+  },
+  "upcoming_title": {
+    "ca": "A L’AGENDA.",
+    "es": "EN AGENDA."
+  },
+  "archive_title": {
+    "ca": "AL NOSTRE ARXIU.",
+    "es": "EN NUESTRO ARCHIVO."
+  },
+  "ticket_title": {
+    "ca": "ENTRADES I PROPERS PROJECTES.",
+    "es": "ENTRADAS Y PRÓXIMOS PROYECTOS."
+  },
+  "ticket_text": {
+    "ca": "Els enllaços a les entrades apareixeran en cada fitxa quan estiguin disponibles. També pots connectar l’agenda de Fourvenues des de l’administrador.",
+    "es": "Los enlaces a las entradas aparecerán en cada ficha cuando estén disponibles. También puedes conectar la agenda de Fourvenues desde el administrador."
+  }
 }

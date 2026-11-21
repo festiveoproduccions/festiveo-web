@@ -1,43 +1,256 @@
 {
   "items": [
     {
-      "date": "2026",
+      "date": "29/11/2026",
+      "date_label": {
+        "ca": "29 de novembre de 2026",
+        "es": "29 de noviembre de 2026"
+      },
+      "sort_date": "2026-11-29",
       "title": {
-        "ca": "VENENO PARTY · Edicions 1 i 2",
-        "es": "VENENO PARTY · Ediciones 1 y 2"
+        "ca": "RAVALADA x FESTIVEO · Ravalada Reus",
+        "es": "RAVALADA x FESTIVEO · Ravalada Reus"
       },
       "description": {
-        "ca": "Dues edicions de festa i espectacle.",
-        "es": "Dos ediciones de fiesta y espectáculo."
+        "ca": "La Ravalada Drag Tour arriba a Reus en col·laboració amb FESTIVEO: un vespreig itinerant que uneix quatre locals, actuacions drag i una ruta guiada pel centre. Una proposta que connecta cultura, diversitat i vida de barri.",
+        "es": "La Ravalada Drag Tour llega a Reus en colaboración con FESTIVEO: un tardeo itinerante que une cuatro locales, actuaciones drag y una ruta guiada por el centro. Una propuesta que conecta cultura, diversidad y vida de barrio."
       },
-      "photos": [],
-      "url": ""
+      "category": "ravalada",
+      "status": "upcoming",
+      "location": "Diversos locals · Reus",
+      "url": "https://ntry.at/ravaladadragtour/performances/27595?l=es",
+      "photos": []
     },
     {
-      "date": "2026",
+      "date": "Noviembre 2026",
+      "date_label": {
+        "ca": "Novembre 2026",
+        "es": "Noviembre 2026"
+      },
+      "sort_date": "2026-11",
       "title": {
-        "ca": "DRAX · 7 edicions",
-        "es": "DRAX · 7 ediciones"
+        "ca": "DRAX · La Gran Final (El teu millor look drag)",
+        "es": "DRAX · La Gran Final (Tu mejor look Drag)"
       },
       "description": {
-        "ca": "Set edicions dedicades a l’art drag.",
-        "es": "Siete ediciones dedicadas al arte drag."
+        "ca": "La gran final de DRAX posa el colofó a una temporada de creativitat, talent i emoció. Les artistes finalistes tornen a l’escenari amb el seu millor look drag per celebrar tot el camí recorregut.",
+        "es": "La gran final de DRAX pone el broche a una temporada de creatividad, talento y emoción. Las artistas finalistas regresan al escenario con su mejor look drag para celebrar todo el camino recorrido."
       },
-      "photos": [],
-      "url": ""
+      "category": "drax",
+      "status": "past",
+      "location": "Reus",
+      "url": "",
+      "photos": []
     },
     {
-      "date": "2026",
+      "date": "Octubre 2026",
+      "date_label": {
+        "ca": "Octubre 2026",
+        "es": "Octubre 2026"
+      },
+      "sort_date": "2026-10",
       "title": {
-        "ca": "Ravalada Drag Tour Reus 2026",
-        "es": "Ravalada Drag Tour Reus 2026"
+        "ca": "RED ROOM · amb Aries Experience",
+        "es": "RED ROOM · con Aries Experience"
       },
       "description": {
-        "ca": "Projecte de la trajectòria FESTIVEO 2026.",
-        "es": "Proyecto de la trayectoria FESTIVEO 2026."
+        "ca": "Una nit amb identitat pròpia, ambientació RED ROOM i la participació d’Aries Experience. Música, espectacle i una estètica pensada per viure una experiència intensa i diferent.",
+        "es": "Una noche con identidad propia, ambientación RED ROOM y la participación de Aries Experience. Música, espectáculo y una estética pensada para vivir una experiencia intensa y diferente."
       },
-      "photos": [],
-      "url": ""
+      "category": "otros",
+      "status": "past",
+      "location": "Reus",
+      "url": "",
+      "photos": []
+    },
+    {
+      "date": "Septiembre 2026",
+      "date_label": {
+        "ca": "Setembre 2026",
+        "es": "Septiembre 2026"
+      },
+      "sort_date": "2026-09",
+      "title": {
+        "ca": "DRAX · Modo Salvaje (Semifinal)",
+        "es": "DRAX · Modo Salvaje (Semifinal)"
+      },
+      "description": {
+        "ca": "DRAX entra en la fase decisiva amb una semifinal de caràcter salvatge: les concursants defensen el seu talent, la posada en escena i la seva personalitat davant del públic i del jurat.",
+        "es": "DRAX entra en su fase decisiva con una semifinal de carácter salvaje: las concursantes defienden su talento, puesta en escena y personalidad ante el público y el jurado."
+      },
+      "category": "drax",
+      "status": "past",
+      "location": "Sala Xtraperlo · Reus",
+      "url": "",
+      "photos": []
+    },
+    {
+      "date": "Agosto 2026",
+      "date_label": {
+        "ca": "Agost 2026",
+        "es": "Agosto 2026"
+      },
+      "sort_date": "2026-08",
+      "title": {
+        "ca": "DRAX · Jet-Set Ibicenco",
+        "es": "DRAX · Jet-Set Ibicenco"
+      },
+      "description": {
+        "ca": "Una edició estiuenca de DRAX amb inspiració eivissenca, estil, fantasia i actuacions que converteixen l’escenari en una autèntica festa de temporada.",
+        "es": "Una edición veraniega de DRAX con inspiración ibicenca, estilo, fantasía y actuaciones que convierten el escenario en una auténtica fiesta de temporada."
+      },
+      "category": "drax",
+      "status": "past",
+      "location": "Sala Xtraperlo · Reus",
+      "url": "",
+      "photos": []
+    },
+    {
+      "date": "Julio 2026",
+      "date_label": {
+        "ca": "Juliol 2026",
+        "es": "Julio 2026"
+      },
+      "sort_date": "2026-07",
+      "title": {
+        "ca": "DRAX · Pride Edition",
+        "es": "DRAX · Pride Edition"
+      },
+      "description": {
+        "ca": "Una celebració de l’orgull i la diversitat a través de l’art drag. Una gala per reivindicar l’expressió lliure i el talent escènic, amb tota l’energia de DRAX.",
+        "es": "Una celebración del orgullo y la diversidad a través del arte drag. Una gala para reivindicar la expresión libre y el talento escénico, con toda la energía de DRAX."
+      },
+      "category": "drax",
+      "status": "past",
+      "location": "Sala Xtraperlo · Reus",
+      "url": "",
+      "photos": []
+    },
+    {
+      "date": "Junio 2026",
+      "date_label": {
+        "ca": "Juny 2026",
+        "es": "Junio 2026"
+      },
+      "sort_date": "2026-06",
+      "title": {
+        "ca": "DRAX · Llums de Neó",
+        "es": "DRAX · Luces de Neón"
+      },
+      "description": {
+        "ca": "Els neons i l’estètica nocturna marquen aquesta entrega de DRAX, amb propostes escèniques, vestuari i actuacions que fan brillar el talent drag.",
+        "es": "Los neones y la estética nocturna marcan esta entrega de DRAX, con propuestas escénicas, vestuario y actuaciones que hacen brillar el talento drag."
+      },
+      "category": "drax",
+      "status": "past",
+      "location": "Sala Xtraperlo · Reus",
+      "url": "",
+      "photos": []
+    },
+    {
+      "date": "Mayo 2026",
+      "date_label": {
+        "ca": "Maig 2026",
+        "es": "Mayo 2026"
+      },
+      "sort_date": "2026-05",
+      "title": {
+        "ca": "Nochentera · 80’s & 90’s amb Minerva la Unyas",
+        "es": "Nochentera · 80’s & 90’s con Minerva la Unyas"
+      },
+      "description": {
+        "ca": "Una nit per tornar als èxits dels vuitanta i noranta, amb música, ritme i la participació de Minerva la Unyas. Nostàlgia i diversió en una experiència per cantar i ballar.",
+        "es": "Una noche para volver a los éxitos de los ochenta y noventa, con música, ritmo y la participación de Minerva la Unyas. Nostalgia y diversión en una experiencia para cantar y bailar."
+      },
+      "category": "otros",
+      "status": "past",
+      "location": "",
+      "url": "",
+      "photos": []
+    },
+    {
+      "date": "Abril 2026",
+      "date_label": {
+        "ca": "Abril 2026",
+        "es": "Abril 2026"
+      },
+      "sort_date": "2026-04",
+      "title": {
+        "ca": "DRAX · La nit dels mil lunars",
+        "es": "DRAX · La noche de los mil lunares"
+      },
+      "description": {
+        "ca": "El món DRAX s’estrena amb una gala temàtica de mil lunars. Creativitat, vestuari i talent drag es troben en una nit pensada per gaudir de l’espectacle en directe.",
+        "es": "El universo DRAX arranca con una gala temática de mil lunares. Creatividad, vestuario y talento drag se encuentran en una noche pensada para disfrutar del espectáculo en directo."
+      },
+      "category": "drax",
+      "status": "past",
+      "location": "Sala Xtraperlo · Reus",
+      "url": "",
+      "photos": []
+    },
+    {
+      "date": "Marzo 2026",
+      "date_label": {
+        "ca": "Març 2026",
+        "es": "Marzo 2026"
+      },
+      "sort_date": "2026-03",
+      "title": {
+        "ca": "VENENO Party",
+        "es": "VENENO Party"
+      },
+      "description": {
+        "ca": "El març de 2026 neix VENENO Party a Reus: una proposta d’oci nocturn LGBTIQ+ que combina espectacles drag, música i una atmosfera de llibertat, orgull i celebració.",
+        "es": "En marzo de 2026 nace VENENO Party en Reus: una propuesta de ocio nocturno LGBTIQ+ que combina espectáculos drag, música y una atmósfera de libertad, orgullo y celebración."
+      },
+      "category": "veneno",
+      "status": "past",
+      "location": "Sala Xtraperlo · Reus",
+      "url": "",
+      "photos": []
+    },
+    {
+      "date": "Julio 2025",
+      "date_label": {
+        "ca": "Juliol 2025",
+        "es": "Julio 2025"
+      },
+      "sort_date": "2025-07",
+      "title": {
+        "ca": "Tardeos Tarragona",
+        "es": "Tardeos Tarragona"
+      },
+      "description": {
+        "ca": "Una proposta d’oci i música en format tardeo a Tarragona. Sessions per compartir, ballar i gaudir de la ciutat amb una experiència festiva pensada per al públic.",
+        "es": "Una propuesta de ocio y música en formato tardeo en Tarragona. Sesiones para compartir, bailar y disfrutar de la ciudad con una experiencia festiva pensada para el público."
+      },
+      "category": "otros",
+      "status": "past",
+      "location": "Tarragona",
+      "url": "",
+      "photos": []
+    },
+    {
+      "date": "Enero 2025",
+      "date_label": {
+        "ca": "Gener 2025",
+        "es": "Enero 2025"
+      },
+      "sort_date": "2025-01",
+      "title": {
+        "ca": "Gala solidària DANA",
+        "es": "Gala solidaria DANA"
+      },
+      "description": {
+        "ca": "FESTIVEO participa en una iniciativa solidària de suport a les persones afectades per la DANA de València, posant la producció i l’espectacle al servei d’una causa col·lectiva.",
+        "es": "FESTIVEO participa en una iniciativa solidaria de apoyo a las personas afectadas por la DANA de Valencia, poniendo la producción y el espectáculo al servicio de una causa colectiva."
+      },
+      "category": "otros",
+      "status": "past",
+      "location": "",
+      "url": "",
+      "photos": []
     }
   ]
 }

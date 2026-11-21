@@ -1,8 +1,9 @@
 {
+  "brand_name": "FESTIVEO Produccions",
   "logo": "/assets/logo.png",
-  "gold": "#dbb77b",
+  "gold": "#dcba80",
   "background": "#080808",
-  "foreground": "#f5f2ed",
+  "foreground": "#f6f1e7",
   "hero_image": "",
   "phone": "+34 662 106 794",
   "email": "festiveoproduccions@gmail.com",
@@ -13,34 +14,52 @@
   "forvenues_url": "",
   "menu": [
     {
-      "ca": "Inici",
-      "es": "Inicio",
-      "href": "index.html"
+      "id": "index",
+      "href": "/index.html",
+      "label": {
+        "ca": "Inici",
+        "es": "Inicio"
+      }
     },
     {
-      "ca": "Qui som",
-      "es": "Quiénes somos",
-      "href": "nosaltres.html"
+      "id": "nosaltres",
+      "href": "/nosaltres.html",
+      "label": {
+        "ca": "Qui som",
+        "es": "Quiénes somos"
+      }
     },
     {
-      "ca": "Serveis",
-      "es": "Servicios",
-      "href": "serveis.html"
+      "id": "serveis",
+      "href": "/serveis.html",
+      "label": {
+        "ca": "Serveis",
+        "es": "Servicios"
+      }
     },
     {
-      "ca": "Esdeveniments",
-      "es": "Eventos",
-      "href": "esdeveniments.html"
+      "id": "esdeveniments",
+      "href": "/esdeveniments.html",
+      "label": {
+        "ca": "Esdeveniments",
+        "es": "Eventos"
+      }
     },
     {
-      "ca": "Artistes",
-      "es": "Artistas",
-      "href": "artistes.html"
+      "id": "artistes",
+      "href": "/artistes.html",
+      "label": {
+        "ca": "Artistes",
+        "es": "Artistas"
+      }
     },
     {
-      "ca": "Contacte",
-      "es": "Contacto",
-      "href": "contacte.html"
+      "id": "contacte",
+      "href": "/contacte.html",
+      "label": {
+        "ca": "Contacte",
+        "es": "Contacto"
+      }
     }
   ]
 }

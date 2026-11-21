@@ -1,71 +1,127 @@
 {
-  "seo_title": {
-    "ca": "FESTIVEO Produccions · Qui som",
-    "es": "FESTIVEO Produccions · Quiénes somos"
-  },
-  "seo_description": {
-    "ca": "FESTIVEO Produccions · Reus, Tarragona · Producció d’esdeveniments, espectacles i serveis tècnics.",
-    "es": "FESTIVEO Produccions · Reus, Tarragona · Producción de eventos, espectáculos y servicios técnicos."
-  },
-  "texts": {
-    "text01": {
-      "ca": "UNA TRAJECTÒRIA QUE <em>ES VIU.</em>",
-      "es": "UNA TRAYECTORIA QUE <em>SE VIVE.</em>"
+  "hero": {
+    "kicker": {
+      "ca": "LA PRODUCTORA · REUS",
+      "es": "LA PRODUCTORA · REUS"
     },
-    "text02": {
-      "ca": "Projectes, escenaris i experiències que ens han fet créixer durant el 2026.",
-      "es": "Proyectos, escenarios y experiencias que nos han hecho crecer durante 2026."
+    "title": {
+      "ca": "SOM FESTIVEO. <em>FEM QUE PASSIN COSES.</em>",
+      "es": "SOMOS FESTIVEO. <em>HACEMOS QUE PASEN COSAS.</em>"
     },
-    "text03": {
-      "ca": "TRAJECTÒRIA",
-      "es": "TRAYECTORIA"
-    },
-    "text04": {
-      "ca": "UN ANY DE PROJECTES I ESCENARIS.",
-      "es": "UN AÑO DE PROYECTOS Y ESCENARIOS."
-    },
-    "text05": {
-      "ca": "FESTIVEO Produccions impulsa propostes d’oci, cultura i espectacles des de Reus, Tarragona.",
-      "es": "FESTIVEO Produccions impulsa propuestas de ocio, cultura y espectáculos desde Reus, Tarragona."
-    },
-    "text06": {
-      "ca": "VENENO PARTY · Edicions 1 i 2",
-      "es": "VENENO PARTY · Ediciones 1 y 2"
-    },
-    "text07": {
-      "ca": "Dues edicions de la nostra proposta de festa i espectacle.",
-      "es": "Dos ediciones de nuestra propuesta de fiesta y espectáculo."
-    },
-    "text08": {
-      "ca": "DRAX · 7 edicions",
-      "es": "DRAX · 7 ediciones"
-    },
-    "text09": {
-      "ca": "Set edicions dedicades a l’art drag i al talent escènic.",
-      "es": "Siete ediciones dedicadas al arte drag y al talento escénico."
-    },
-    "text10": {
-      "ca": "Ravalada Drag Tour Reus 2026",
-      "es": "Ravalada Drag Tour Reus 2026"
-    },
-    "text11": {
-      "ca": "Una altra experiència que forma part de la nostra trajectòria.",
-      "es": "Otra experiencia que forma parte de nuestra trayectoria."
-    },
-    "text12": {
-      "ca": "VEURE GALERIA",
-      "es": "VER GALERÍA"
+    "subtitle": {
+      "ca": "Una productora amb arrels al Camp de Tarragona i ganes de fer les coses d’una altra manera.",
+      "es": "Una productora con raíces en el Camp de Tarragona y ganas de hacer las cosas de otra manera."
     }
   },
-  "eyebrows": {
-    "eyebrow01": {
-      "ca": "FESTIVEO PRODUCCIONS · REUS",
-      "es": "FESTIVEO PRODUCCIONS · REUS"
-    }
+  "story_title": {
+    "ca": "CADA PROJECTE COMENÇA AMB UNA IDEA.",
+    "es": "CADA PROYECTO EMPIEZA CON UNA IDEA."
   },
-  "buttons": {
-    "button01": {
-      "href": "esdeveniments.html"
+  "story_text": {
+    "ca": "FESTIVEO Produccions és un projecte de producció cultural i d’esdeveniments nascut de la passió per l’escenari, la música i el treball que no sempre es veu. Des dels primers passos el 2019 hem après cada part del procés: l’organització, el tracte amb el públic, la producció artística i els recursos tècnics. Avui convertim aquest recorregut en una productora flexible que acompanya projectes propis i de tercers.",
+    "es": "FESTIVEO Produccions es un proyecto de producción cultural y de eventos nacido de la pasión por el escenario, la música y el trabajo que no siempre se ve. Desde nuestros primeros pasos en 2019 hemos aprendido cada parte del proceso: la organización, la atención al público, la producción artística y los recursos técnicos. Hoy convertimos ese recorrido en una productora flexible que acompaña proyectos propios y de terceros."
+  },
+  "mission_title": {
+    "ca": "CREATIVITAT, ORGANITZACIÓ I PROXIMITAT.",
+    "es": "CREATIVIDAD, ORGANIZACIÓN Y CERCANÍA."
+  },
+  "mission_text": {
+    "ca": "Ens impliquem en la idea, en el seu format i en cada detall de l’execució. Treballem per crear experiències amb identitat, visibilitzar el talent local i construir espais culturals oberts i diversos.",
+    "es": "Nos implicamos en la idea, en su formato y en cada detalle de la ejecución. Trabajamos para crear experiencias con identidad, dar visibilidad al talento local y construir espacios culturales abiertos y diversos."
+  },
+  "timeline_title": {
+    "ca": "EL CAMÍ FINS AQUÍ.",
+    "es": "EL CAMINO HASTA AQUÍ."
+  },
+  "timeline": [
+    {
+      "year": "2019–2024",
+      "title": {
+        "ca": "Aprendre fent",
+        "es": "Aprender haciendo"
+      },
+      "description": {
+        "ca": "Autoformació i experiència directa en l’oci, la tècnica i l’organització d’esdeveniments.",
+        "es": "Autoformación y experiencia directa en el ocio, la técnica y la organización de eventos."
+      }
+    },
+    {
+      "year": "2025",
+      "title": {
+        "ca": "Cultura i compromís",
+        "es": "Cultura y compromiso"
+      },
+      "description": {
+        "ca": "Producció d’una gala benèfica vinculada a la DANA de València i desenvolupament de propostes culturals i tardeos a Tarragona.",
+        "es": "Producción de una gala benéfica vinculada a la DANA de Valencia y desarrollo de propuestas culturales y tardeos en Tarragona."
+      }
+    },
+    {
+      "year": "2026 · MARÇ / SEPTEMBRE",
+      "title": {
+        "ca": "VENENO PARTY",
+        "es": "VENENO PARTY"
+      },
+      "description": {
+        "ca": "Dues edicions que uneixen música, espectacle drag, referents LGBTIQ+ i experiències nocturnes a Reus i Tarragona.",
+        "es": "Dos ediciones que unen música, espectáculo drag, referentes LGBTIQ+ y experiencias nocturnas en Reus y Tarragona."
+      }
+    },
+    {
+      "year": "2026 · ABRIL / NOVEMBRE",
+      "title": {
+        "ca": "DRAX BY VENENO",
+        "es": "DRAX BY VENENO"
+      },
+      "description": {
+        "ca": "Set gales de competició i talent drag a Xtraperlo Reus: classificatòries, semifinals i final.",
+        "es": "Siete galas de competición y talento drag en Xtraperlo Reus: clasificatorias, semifinales y final."
+      }
+    },
+    {
+      "year": "2026 · NOVEMBRE",
+      "title": {
+        "ca": "RAVALADA DRAG TOUR REUS",
+        "es": "RAVALADA DRAG TOUR REUS"
+      },
+      "description": {
+        "ca": "Coordinació local de la ruta drag itinerant programada per al 29 de novembre, amb diferents espais de la ciutat.",
+        "es": "Coordinación local de la ruta drag itinerante programada para el 29 de noviembre, con diferentes espacios de la ciudad."
+      }
     }
-  }
+  ],
+  "team_title": {
+    "ca": "LES PERSONES DARRERE DE L’ESCENARI.",
+    "es": "LAS PERSONAS DETRÁS DEL ESCENARIO."
+  },
+  "team_intro": {
+    "ca": "Una direcció pròxima i una xarxa de professionals i artistes col·laboradors que s’adapta a cada producció.",
+    "es": "Una dirección cercana y una red de profesionales y artistas colaboradores que se adapta a cada producción."
+  },
+  "team": [
+    {
+      "name": "Pau Martínez",
+      "role": {
+        "ca": "Direcció general · FESTIVEO Produccions",
+        "es": "Dirección general · FESTIVEO Produccions"
+      },
+      "bio": {
+        "ca": "Direcció i coordinació de projectes, producció d’espectacles i relació amb artistes i col·laboradors.",
+        "es": "Dirección y coordinación de proyectos, producción de espectáculos y relación con artistas y colaboradores."
+      },
+      "image": ""
+    },
+    {
+      "name": "Equip FESTIVEO",
+      "role": {
+        "ca": "Producció, tècnica i col·laboracions",
+        "es": "Producción, técnica y colaboraciones"
+      },
+      "bio": {
+        "ca": "Un equip de professionals que es configura segons les necessitats creatives, tècniques i operatives de cada esdeveniment.",
+        "es": "Un equipo de profesionales que se configura según las necesidades creativas, técnicas y operativas de cada evento."
+      },
+      "image": ""
+    }
+  ]
 }

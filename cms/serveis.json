@@ -1,43 +1,78 @@
 {
-  "seo_title": {
-    "ca": "FESTIVEO Produccions · Serveis",
-    "es": "FESTIVEO Produccions · Servicios"
-  },
-  "seo_description": {
-    "ca": "FESTIVEO Produccions · Reus, Tarragona · Producció d’esdeveniments, espectacles i serveis tècnics.",
-    "es": "FESTIVEO Produccions · Reus, Tarragona · Producción de eventos, espectáculos y servicios técnicos."
-  },
-  "texts": {
-    "text01": {
+  "hero": {
+    "kicker": {
+      "ca": "ELS NOSTRES SERVEIS",
+      "es": "NUESTROS SERVICIOS"
+    },
+    "title": {
       "ca": "DE LA IDEA A <em>L’ESCENARI.</em>",
       "es": "DE LA IDEA AL <em>ESCENARIO.</em>"
     },
-    "text02": {
-      "ca": "T’acompanyem des del primer concepte fins a l’últim aplaudiment.",
-      "es": "Te acompañamos desde el primer concepto hasta el último aplauso."
-    },
-    "text03": {
-      "ca": "QUÈ FEM",
-      "es": "QUÉ HACEMOS"
-    },
-    "text04": {
-      "ca": "SERVEIS A MIDA.",
-      "es": "SERVICIOS A MEDIDA."
-    },
-    "text05": {
-      "ca": "DEMANA’NS PRESSUPOST",
-      "es": "PÍDENOS PRESUPUESTO"
+    "subtitle": {
+      "ca": "Pensem, produïm i donem suport. Un mateix equip, totes les fases.",
+      "es": "Pensamos, producimos y damos soporte. Un mismo equipo, todas las fases."
     }
   },
-  "eyebrows": {
-    "eyebrow01": {
-      "ca": "FESTIVEO PRODUCCIONS · REUS",
-      "es": "FESTIVEO PRODUCCIONS · REUS"
-    }
+  "intro_title": {
+    "ca": "TENS EL CONCEPTE. <em>NOSALTRES, EL COM.</em>",
+    "es": "TÚ TIENES EL CONCEPTO. <em>NOSOTROS, EL CÓMO.</em>"
   },
-  "buttons": {
-    "button01": {
-      "href": "contacte.html"
+  "intro_text": {
+    "ca": "Tant si necessites una producció completa com un suport puntual, ens adaptem a l’espai, al públic i als recursos disponibles.",
+    "es": "Tanto si necesitas una producción completa como un apoyo puntual, nos adaptamos al espacio, al público y a los recursos disponibles."
+  },
+  "process_title": {
+    "ca": "COM TREBALLEM.",
+    "es": "CÓMO TRABAJAMOS."
+  },
+  "steps": [
+    {
+      "number": "01",
+      "title": {
+        "ca": "ESCOLTEM",
+        "es": "ESCUCHAMOS"
+      },
+      "description": {
+        "ca": "Coneixem la idea, el format i els objectius.",
+        "es": "Conocemos la idea, el formato y los objetivos."
+      }
+    },
+    {
+      "number": "02",
+      "title": {
+        "ca": "DISSENYEM",
+        "es": "DISEÑAMOS"
+      },
+      "description": {
+        "ca": "Preparem el plantejament artístic, tècnic i operatiu.",
+        "es": "Preparamos el planteamiento artístico, técnico y operativo."
+      }
+    },
+    {
+      "number": "03",
+      "title": {
+        "ca": "PRODUÏM",
+        "es": "PRODUCIMOS"
+      },
+      "description": {
+        "ca": "Coordinem equips, artistes, escenari i calendaris.",
+        "es": "Coordinamos equipos, artistas, escenario y calendarios."
+      }
+    },
+    {
+      "number": "04",
+      "title": {
+        "ca": "FEM-HO REALITAT",
+        "es": "LO HACEMOS REALIDAD"
+      },
+      "description": {
+        "ca": "Executem l’esdeveniment i supervisem cada detall.",
+        "es": "Ejecutamos el evento y supervisamos cada detalle."
+      }
     }
+  ],
+  "cta_title": {
+    "ca": "EXPLICA’NS QUÈ NECESSITES.",
+    "es": "CUÉNTANOS QUÉ NECESITAS."
   }
 }

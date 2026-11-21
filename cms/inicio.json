@@ -1,100 +1,48 @@
 {
-  "seo_title": {
-    "ca": "FESTIVEO Produccions · Inici",
-    "es": "FESTIVEO Produccions · Inicio"
-  },
-  "seo_description": {
-    "ca": "FESTIVEO Produccions · Reus, Tarragona · Producció d’esdeveniments, espectacles i serveis tècnics.",
-    "es": "FESTIVEO Produccions · Reus, Tarragona · Producción de eventos, espectáculos y servicios técnicos."
-  },
-  "texts": {
-    "text01": {
+  "hero": {
+    "kicker": {
+      "ca": "PRODUCCIÓ · CULTURA · EXPERIÈNCIES",
+      "es": "PRODUCCIÓN · CULTURA · EXPERIENCIAS"
+    },
+    "title": {
       "ca": "FEM QUE LES IDEES <em>COBRIN VIDA.</em>",
       "es": "HACEMOS QUE LAS IDEAS <em>COBREN VIDA.</em>"
     },
-    "text02": {
-      "ca": "Producció, realització i talent per convertir idees en experiències que no s'expliquen.",
-      "es": "Producción, realización y talento para convertir ideas en experiencias que no se explican."
-    },
-    "text03": {
-      "ca": "ELS NOSTRES SERVEIS",
-      "es": "NUESTROS SERVICIOS"
-    },
-    "text04": {
-      "ca": "CONTACTA",
-      "es": "CONTACTA"
-    },
-    "text05": {
-      "ca": "CREATIVITAT, PRODUCCIÓ I EXPERIÈNCIA.",
-      "es": "CREATIVIDAD, PRODUCCIÓN Y EXPERIENCIA."
-    },
-    "text06": {
-      "ca": "Idees i producció",
-      "es": "Ideas y producción"
-    },
-    "text07": {
-      "ca": "Imaginem, planifiquem i executem esdeveniments de principi a fi.",
-      "es": "Imaginamos, planificamos y ejecutamos eventos de principio a fin."
-    },
-    "text08": {
-      "ca": "Suport tècnic",
-      "es": "Soporte técnico"
-    },
-    "text09": {
-      "ca": "So, il·luminació i animació adaptats a cada format.",
-      "es": "Sonido, iluminación y animación adaptados a cada formato."
-    },
-    "text10": {
-      "ca": "Talent i espectacles",
-      "es": "Talento y espectáculos"
-    },
-    "text11": {
-      "ca": "Artistes i grups col·laboradors per a experiències úniques.",
-      "es": "Artistas y grupos colaboradores para experiencias únicas."
-    },
-    "text12": {
-      "ca": "LA NOSTRA TRAJECTÒRIA",
-      "es": "NUESTRA TRAYECTORIA"
-    },
-    "text13": {
-      "ca": "UNA TEMPORADA PLENA D’HISTÒRIES.",
-      "es": "UNA TEMPORADA LLENA DE HISTORIAS."
-    },
-    "text14": {
-      "ca": "VENENO PARTY, DRAX i Ravalada Drag Tour Reus: coneix els projectes que formen part del nostre recorregut.",
-      "es": "VENENO PARTY, DRAX y Ravalada Drag Tour Reus: conoce los proyectos que forman parte de nuestro recorrido."
-    },
-    "text15": {
-      "ca": "VEURE ESDEVENIMENTS",
-      "es": "VER EVENTOS"
+    "subtitle": {
+      "ca": "Producció, realització i talent per transformar idees en experiències que es recorden.",
+      "es": "Producción, realización y talento para transformar ideas en experiencias que se recuerdan."
     }
   },
-  "eyebrows": {
-    "eyebrow01": {
-      "ca": "FESTIVEO PRODUCCIONS · REUS",
-      "es": "FESTIVEO PRODUCCIONS · REUS"
-    },
-    "eyebrow02": {
-      "ca": "01 / FESTIVEO",
-      "es": "01 / FESTIVEO"
-    },
-    "eyebrow03": {
-      "ca": "2026 / 2027",
-      "es": "2026 / 2027"
-    }
+  "intro_title": {
+    "ca": "No organitzem només esdeveniments. <em>Els fem passar.</em>",
+    "es": "No solo organizamos eventos. <em>Los hacemos realidad.</em>"
   },
-  "buttons": {
-    "button01": {
-      "href": "serveis.html"
-    },
-    "button02": {
-      "href": "contacte.html"
-    },
-    "button03": {
-      "href": "nosaltres.html"
-    },
-    "button04": {
-      "href": "esdeveniments.html"
-    }
+  "intro_text": {
+    "ca": "Des de Reus, connectem creativitat, planificació, tècnica i talent artístic. Treballem amb cada client, col·lectiu i espai per donar forma a una proposta pròpia, de la primera reunió a l’última cançó.",
+    "es": "Desde Reus, conectamos creatividad, planificación, técnica y talento artístico. Trabajamos con cada cliente, colectivo y espacio para dar forma a una propuesta propia, desde la primera reunión hasta la última canción."
+  },
+  "services_kicker": {
+    "ca": "QUÈ PODEM FER PER TU",
+    "es": "QUÉ PODEMOS HACER POR TI"
+  },
+  "services_title": {
+    "ca": "UNA IDEA. <em>TOTES LES SOLUCIONS.</em>",
+    "es": "UNA IDEA. <em>TODAS LAS SOLUCIONES.</em>"
+  },
+  "featured_title": {
+    "ca": "ELS PROJECTES PARLEN PER NOSALTRES.",
+    "es": "LOS PROYECTOS HABLAN POR NOSOTROS."
+  },
+  "featured_text": {
+    "ca": "VENENO PARTY, DRAX i una nova manera de viure l’oci i la cultura a les comarques de Tarragona.",
+    "es": "VENENO PARTY, DRAX y una nueva manera de vivir el ocio y la cultura en las comarcas de Tarragona."
+  },
+  "cta_title": {
+    "ca": "TENS UNA IDEA QUE ET RONDA PEL CAP?",
+    "es": "¿TIENES UNA IDEA EN LA CABEZA?"
+  },
+  "cta_text": {
+    "ca": "Parlem-ne. Ens agraden els projectes que encara no existeixen.",
+    "es": "Hablemos. Nos gustan los proyectos que todavía no existen."
   }
 }

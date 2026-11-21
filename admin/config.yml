@@ -10,26 +10,29 @@ public_folder: /images
 publish: true
 collections:
 - name: apariencia
-  label: 01 · Diseño y ajustes
+  label: 01 · Diseño y contacto
   files:
   - name: ajustes
-    label: Logo, colores, teléfonos, redes y menú
+    label: Logotipo, colores, redes, contacto y menú
     file: cms/settings.json
     format: json
     fields:
-    - label: Logo oficial
+    - label: Nombre comercial
+      name: brand_name
+      widget: string
+    - label: Logotipo
       name: logo
       widget: image
-    - label: Dorado hexadecimal (#dbb77b)
+    - label: 'Dorado (código #RRGGBB)'
       name: gold
       widget: string
-    - label: Fondo hexadecimal (#080808)
+    - label: 'Fondo (código #RRGGBB)'
       name: background
       widget: string
-    - label: Texto hexadecimal (#f5f2ed)
+    - label: 'Texto (código #RRGGBB)'
       name: foreground
       widget: string
-    - label: Foto de portada (opcional)
+    - label: Foto de fondo de las portadas (opcional)
       name: hero_image
       widget: image
       required: false
@@ -39,73 +42,60 @@ collections:
     - label: Email
       name: email
       widget: string
-    - label: Localización
+    - label: Ubicación
       name: location
       widget: string
-    - label: Instagram URL
+    - label: Instagram (URL)
       name: instagram
       widget: string
       required: false
-    - label: Facebook URL
+    - label: Facebook (URL)
       name: facebook
       widget: string
       required: false
-    - label: TikTok URL
+    - label: TikTok (URL)
       name: tiktok
       widget: string
       required: false
-    - label: Forvenues URL https://
+    - label: Fourvenues / entradas (URL)
       name: forvenues_url
       widget: string
       required: false
-    - label: Menú (conservar 6 enlaces y su orden)
+    - label: Menú de navegación (mantener las seis páginas)
       name: menu
       widget: list
-      summary: '{{fields.ca}}'
       fields:
-      - label: Nombre catalán
-        name: ca
+      - label: Identificador de página (no modificar)
+        name: id
         widget: string
-      - label: Nombre castellano
-        name: es
-        widget: string
-      - label: Destino
+      - label: Dirección de página
         name: href
         widget: string
+      - label: Texto del menú
+        name: label
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
 - name: inicio
   label: 02 · Inicio
   files:
   - name: pagina
-    label: Textos y botones de Inicio
+    label: Portada, presentación y destacados
     file: cms/inicio.json
     format: json
     fields:
-    - label: Título de pestaña y SEO
-      name: seo_title
+    - &id001
+      label: Portada · título y presentación
+      name: hero
       widget: object
       fields:
-      - label: Català
-        name: ca
-        widget: string
-      - label: Castellano
-        name: es
-        widget: string
-    - label: Descripción de buscadores
-      name: seo_description
-      widget: object
-      fields:
-      - label: Català
-        name: ca
-        widget: text
-      - label: Castellano
-        name: es
-        widget: text
-    - label: Titulares, párrafos y botones
-      name: texts
-      widget: object
-      fields:
-      - label: Titular principal
-        name: text01
+      - label: Texto pequeño sobre el título
+        name: kicker
         widget: object
         fields:
         - label: Català
@@ -114,506 +104,7 @@ collections:
         - label: Castellano
           name: es
           widget: string
-      - label: Texto de introducción
-        name: text02
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Botón de servicios
-        name: text03
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Botón de contacto
-        name: text04
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: 'Sección: creatividad'
-        name: text05
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Servicio 1 título
-        name: text06
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Servicio 1 descripción
-        name: text07
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Servicio 2 título
-        name: text08
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Servicio 2 descripción
-        name: text09
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Servicio 3 título
-        name: text10
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Servicio 3 descripción
-        name: text11
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Botón trayectoria
-        name: text12
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Temporada titular
-        name: text13
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Temporada descripción
-        name: text14
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Botón eventos
-        name: text15
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-    - label: Etiquetas pequeñas de secciones
-      name: eyebrows
-      widget: object
-      fields:
-      - label: Etiqueta 1
-        name: eyebrow01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Etiqueta 2
-        name: eyebrow02
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Etiqueta 3
-        name: eyebrow03
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-    - label: Destinos de los botones
-      name: buttons
-      widget: object
-      fields:
-      - label: Botón 1
-        name: button01
-        widget: object
-        fields:
-        - label: URL o página de destino
-          name: href
-          widget: string
-      - label: Botón 2
-        name: button02
-        widget: object
-        fields:
-        - label: URL o página de destino
-          name: href
-          widget: string
-      - label: Botón 3
-        name: button03
-        widget: object
-        fields:
-        - label: URL o página de destino
-          name: href
-          widget: string
-      - label: Botón 4
-        name: button04
-        widget: object
-        fields:
-        - label: URL o página de destino
-          name: href
-          widget: string
-- name: nosaltres
-  label: 03 · Quiénes somos
-  files:
-  - name: pagina
-    label: Textos y botones de Quiénes somos
-    file: cms/nosaltres.json
-    format: json
-    fields:
-    - label: Título de pestaña y SEO
-      name: seo_title
-      widget: object
-      fields:
-      - label: Català
-        name: ca
-        widget: string
-      - label: Castellano
-        name: es
-        widget: string
-    - label: Descripción de buscadores
-      name: seo_description
-      widget: object
-      fields:
-      - label: Català
-        name: ca
-        widget: text
-      - label: Castellano
-        name: es
-        widget: text
-    - label: Titulares, párrafos y botones
-      name: texts
-      widget: object
-      fields:
-      - label: Titular de la trayectoria
-        name: text01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Introducción
-        name: text02
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Etiqueta trayectoria
-        name: text03
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Proyectos y escenarios
-        name: text04
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Presentación de FESTIVEO
-        name: text05
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Veneno Party titular
-        name: text06
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Veneno Party descripción
-        name: text07
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: DRAX titular
-        name: text08
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: DRAX descripción
-        name: text09
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Ravalada titular
-        name: text10
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Ravalada descripción
-        name: text11
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Botón de galería
-        name: text12
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-    - label: Etiquetas pequeñas de secciones
-      name: eyebrows
-      widget: object
-      fields:
-      - label: Etiqueta 1
-        name: eyebrow01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-    - label: Destinos de los botones
-      name: buttons
-      widget: object
-      fields:
-      - label: Botón 1
-        name: button01
-        widget: object
-        fields:
-        - label: URL o página de destino
-          name: href
-          widget: string
-- name: serveis
-  label: 04 · Servicios
-  files:
-  - name: pagina
-    label: Textos y botones de Servicios
-    file: cms/serveis.json
-    format: json
-    fields:
-    - label: Título de pestaña y SEO
-      name: seo_title
-      widget: object
-      fields:
-      - label: Català
-        name: ca
-        widget: string
-      - label: Castellano
-        name: es
-        widget: string
-    - label: Descripción de buscadores
-      name: seo_description
-      widget: object
-      fields:
-      - label: Català
-        name: ca
-        widget: text
-      - label: Castellano
-        name: es
-        widget: text
-    - label: Titulares, párrafos y botones
-      name: texts
-      widget: object
-      fields:
-      - label: Titular de servicios
-        name: text01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Introducción
-        name: text02
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Etiqueta servicios
-        name: text03
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Sección principal
-        name: text04
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Botón de presupuestos
-        name: text05
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-    - label: Etiquetas pequeñas de secciones
-      name: eyebrows
-      widget: object
-      fields:
-      - label: Etiqueta 1
-        name: eyebrow01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-    - label: Destinos de los botones
-      name: buttons
-      widget: object
-      fields:
-      - label: Botón 1
-        name: button01
-        widget: object
-        fields:
-        - label: URL o página de destino
-          name: href
-          widget: string
-  - name: listado
-    label: Añadir / editar / eliminar servicios
-    file: cms/services.json
-    format: json
-    fields:
-    - label: Servicios
-      name: items
-      widget: list
-      fields:
-      - label: Título
+      - label: Título de portada (admite <em>texto dorado</em>)
         name: title
         widget: object
         fields:
@@ -623,6 +114,173 @@ collections:
         - label: Castellano
           name: es
           widget: text
+      - label: Texto introductorio
+        name: subtitle
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+    - label: Título de presentación
+      name: intro_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Texto de presentación
+      name: intro_text
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Texto pequeño de servicios
+      name: services_kicker
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: string
+      - label: Castellano
+        name: es
+        widget: string
+    - label: Título de servicios
+      name: services_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Título de destacados
+      name: featured_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Texto de destacados
+      name: featured_text
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Título de contacto
+      name: cta_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Texto de contacto
+      name: cta_text
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+- name: nosaltres
+  label: 03 · Quiénes somos
+  files:
+  - name: pagina
+    label: Historia, trayectoria y responsables
+    file: cms/nosaltres.json
+    format: json
+    fields:
+    - *id001
+    - label: Título de la historia
+      name: story_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Texto de la historia
+      name: story_text
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Título de los valores
+      name: mission_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Texto de los valores
+      name: mission_text
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Título de la trayectoria
+      name: timeline_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Etapas de la trayectoria
+      name: timeline
+      widget: list
+      summary: '{{fields.title.ca}}'
+      fields:
+      - label: Fecha / etapa
+        name: year
+        widget: string
+      - label: Título
+        name: title
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
       - label: Descripción
         name: description
         widget: object
@@ -633,34 +291,345 @@ collections:
         - label: Castellano
           name: es
           widget: text
-      - label: Foto
+    - label: Título del equipo responsable
+      name: team_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Presentación del equipo
+      name: team_intro
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Responsables y equipo
+      name: team
+      widget: list
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Cargo / Función
+        name: role
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Presentación
+        name: bio
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+      - label: Fotografía (opcional)
         name: image
         widget: image
         required: false
-      - label: Enlace https:// (opcional)
+- name: servicios
+  label: 04 · Servicios
+  files:
+  - name: pagina
+    label: Textos y proceso de trabajo
+    file: cms/serveis.json
+    format: json
+    fields:
+    - *id001
+    - label: Título introductorio
+      name: intro_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Párrafo introductorio
+      name: intro_text
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Título del proceso
+      name: process_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Pasos del proceso
+      name: steps
+      widget: list
+      fields:
+      - label: Número
+        name: number
+        widget: string
+      - label: Título
+        name: title
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Descripción
+        name: description
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+    - label: Título de contacto
+      name: cta_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+  - name: listado
+    label: Añadir / editar / eliminar servicios
+    file: cms/services.json
+    format: json
+    fields:
+    - label: Servicios
+      name: items
+      widget: list
+      summary: '{{fields.title.ca}}'
+      fields:
+      - label: Número de orden
+        name: number
+        widget: string
+      - label: Nombre del servicio
+        name: title
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Descripción del servicio
+        name: description
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+      - label: Imagen (opcional)
+        name: image
+        widget: image
+        required: false
+      - label: Enlace opcional HTTPS
         name: url
         widget: string
         required: false
-- name: artistes
-  label: 05 · Artistas
+- name: eventos
+  label: 05 · Eventos y fotografías
   files:
   - name: pagina
-    label: Textos y botones de Artistas
+    label: Textos de la agenda
+    file: cms/esdeveniments.json
+    format: json
+    fields:
+    - *id001
+    - label: Título de la agenda
+      name: intro_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Presentación de los eventos
+      name: intro_text
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Título de próximos eventos
+      name: upcoming_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: string
+      - label: Castellano
+        name: es
+        widget: string
+    - label: Título de eventos anteriores
+      name: archive_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: string
+      - label: Castellano
+        name: es
+        widget: string
+    - label: Título de entradas
+      name: ticket_title
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Texto de entradas
+      name: ticket_text
+      widget: object
+      fields:
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+  - name: listado_eventos
+    label: Eventos · Añadir y subir hasta 3 fotos
+    file: events.json
+    format: json
+    fields:
+    - label: Eventos
+      name: items
+      widget: list
+      summary: '{{fields.title.ca}}'
+      fields:
+      - label: Fecha visible (por ejemplo Noviembre 2026)
+        name: date
+        widget: string
+      - label: Fecha para ordenar (AAAA-MM o AAAA-MM-DD)
+        name: sort_date
+        widget: string
+        required: false
+        hint: No se muestra al público. Mantiene la cronología aunque cambies el orden del listado.
+      - label: Mes y año traducidos (opcional)
+        name: date_label
+        widget: object
+        required: false
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Título del evento
+        name: title
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: string
+        - label: Castellano
+          name: es
+          widget: string
+      - label: Descripción completa
+        name: description
+        widget: object
+        fields:
+        - label: Català
+          name: ca
+          widget: text
+        - label: Castellano
+          name: es
+          widget: text
+      - label: Lugar / Sala
+        name: location
+        widget: string
+        required: false
+      - label: Categoría
+        name: category
+        widget: select
+        options:
+        - label: VENENO
+          value: veneno
+        - label: DRAX
+          value: drax
+        - label: RAVALADA
+          value: ravalada
+        - label: Otro
+          value: otros
+      - label: Estado
+        name: status
+        widget: select
+        options:
+        - label: Evento celebrado
+          value: past
+        - label: Próximo evento
+          value: upcoming
+      - label: Fotos del evento (máximo 3)
+        name: photos
+        widget: list
+        max: 3
+        required: false
+        field:
+          label: Foto
+          name: image
+          widget: image
+      - label: Enlace de entradas / Fourvenues HTTPS
+        name: url
+        widget: string
+        required: false
+      - label: Fecha verificada (uso interno)
+        name: verified
+        widget: boolean
+        required: false
+        default: true
+- name: artistas
+  label: 06 · Artistas y colaboradores
+  files:
+  - name: pagina
+    label: Textos de la página de artistas
     file: cms/artistes.json
     format: json
     fields:
-    - label: Título de pestaña y SEO
-      name: seo_title
-      widget: object
-      fields:
-      - label: Català
-        name: ca
-        widget: string
-      - label: Castellano
-        name: es
-        widget: string
-    - label: Descripción de buscadores
-      name: seo_description
+    - *id001
+    - label: Título de artistas
+      name: intro_title
       widget: object
       fields:
       - label: Català
@@ -669,164 +638,39 @@ collections:
       - label: Castellano
         name: es
         widget: text
-    - label: Titulares, párrafos y botones
-      name: texts
+    - label: Texto introductorio
+      name: intro_text
       widget: object
       fields:
-      - label: Titular de artistas
-        name: text01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Introducción
-        name: text02
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Etiqueta colaboradores
-        name: text03
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Sección de artistas
-        name: text04
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Texto introductorio
-        name: text05
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Categoría 1
-        name: text06
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Descripción categoría 1
-        name: text07
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Categoría 2
-        name: text08
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Descripción categoría 2
-        name: text09
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Categoría 3
-        name: text10
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Descripción categoría 3
-        name: text11
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Nota sobre artistas
-        name: text12
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-    - label: Etiquetas pequeñas de secciones
-      name: eyebrows
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Título de contacto
+      name: cta_title
       widget: object
       fields:
-      - label: Etiqueta 1
-        name: eyebrow01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
   - name: listado
-    label: Añadir / editar / eliminar artistas
+    label: Añadir / editar artistas
     file: cms/artists.json
     format: json
     fields:
     - label: Artistas
       name: items
       widget: list
-      required: false
+      summary: '{{fields.title.ca}}'
       fields:
       - label: Nombre artístico
         name: name
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
+        widget: string
       - label: Biografía
         name: bio
         widget: object
@@ -841,201 +685,21 @@ collections:
         name: image
         widget: image
         required: false
-      - label: Enlace https:// (opcional)
+      - label: Enlace web / redes
         name: url
         widget: string
         required: false
-- name: esdeveniments
-  label: 06 · Eventos y galería
-  files:
-  - name: pagina
-    label: Textos y botones de Eventos y galería
-    file: cms/esdeveniments.json
-    format: json
-    fields:
-    - label: Título de pestaña y SEO
-      name: seo_title
-      widget: object
-      fields:
-      - label: Català
-        name: ca
-        widget: string
-      - label: Castellano
-        name: es
-        widget: string
-    - label: Descripción de buscadores
-      name: seo_description
-      widget: object
-      fields:
-      - label: Català
-        name: ca
-        widget: text
-      - label: Castellano
-        name: es
-        widget: text
-    - label: Titulares, párrafos y botones
-      name: texts
-      widget: object
-      fields:
-      - label: Titular de eventos
-        name: text01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Introducción
-        name: text02
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Etiqueta galería
-        name: text03
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Eventos 2026 título
-        name: text04
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Texto bajo la galería
-        name: text05
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Sección Forvenues
-        name: text06
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Descripción Forvenues
-        name: text07
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-    - label: Etiquetas pequeñas de secciones
-      name: eyebrows
-      widget: object
-      fields:
-      - label: Etiqueta 1
-        name: eyebrow01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Etiqueta 2
-        name: eyebrow02
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-  - name: listado_eventos
-    label: Eventos, galerías y entradas
-    file: events.json
-    format: json
-    fields:
-    - label: Eventos
-      name: items
-      widget: list
-      summary: '{{fields.date}}'
-      fields:
-      - label: Fecha o año
-        name: date
-        widget: string
-      - label: Título
-        name: title
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Descripción
-        name: description
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Fotografías
-        name: photos
-        widget: list
-        required: false
-        field:
-          label: Imagen
-          name: image
-          widget: image
-      - label: Entradas / información https://
-        name: url
-        widget: string
-        required: false
-- name: contacte
+- name: contacto
   label: 07 · Contacto
   files:
   - name: pagina
-    label: Textos y botones de Contacto
+    label: Presentación y formulario de contacto
     file: cms/contacte.json
     format: json
     fields:
-    - label: Título de pestaña y SEO
-      name: seo_title
-      widget: object
-      fields:
-      - label: Català
-        name: ca
-        widget: string
-      - label: Castellano
-        name: es
-        widget: string
-    - label: Descripción de buscadores
-      name: seo_description
+    - *id001
+    - label: Título de contacto
+      name: intro_title
       widget: object
       fields:
       - label: Català
@@ -1044,129 +708,33 @@ collections:
       - label: Castellano
         name: es
         widget: text
-    - label: Titulares, párrafos y botones
-      name: texts
+    - label: Texto introductorio
+      name: intro_text
       widget: object
       fields:
-      - label: Titular contacto
-        name: text01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Introducción
-        name: text02
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Etiqueta contrataciones
-        name: text03
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Sección contacto
-        name: text04
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Texto hablamos
-        name: text05
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Etiqueta teléfono y WhatsApp
-        name: text06
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Botón enviar correo
-        name: text07
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-      - label: Ubicación título
-        name: text08
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-      - label: Descripción ubicación
-        name: text09
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: text
-        - label: Castellano
-          name: es
-          widget: text
-    - label: Etiquetas pequeñas de secciones
-      name: eyebrows
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Título del formulario
+      name: form_title
       widget: object
       fields:
-      - label: Etiqueta 1
-        name: eyebrow01
-        widget: object
-        fields:
-        - label: Català
-          name: ca
-          widget: string
-        - label: Castellano
-          name: es
-          widget: string
-    - label: Destinos de los botones
-      name: buttons
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
+    - label: Nota del formulario
+      name: form_note
       widget: object
       fields:
-      - label: Botón 1
-        name: button01
-        widget: object
-        fields:
-        - label: URL o página de destino
-          name: href
-          widget: string
-      - label: Botón 2
-        name: button02
-        widget: object
-        fields:
-        - label: URL o página de destino
-          name: href
-          widget: string
+      - label: Català
+        name: ca
+        widget: text
+      - label: Castellano
+        name: es
+        widget: text
