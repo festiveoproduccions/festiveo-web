@@ -24,7 +24,7 @@ collections:
           - label: Eventos
             name: items
             widget: list
-            summary: '{{fields.date}} — {{fields.title.ca}}'
+            summary: '{{fields.date}}'
             fields:
               - {label: Fecha o año, name: date, widget: string}
               - label: Título
