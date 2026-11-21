@@ -8,7 +8,7 @@
         "ca": "29 Novembre de 2026",
         "es": "29 Noviembre de 2026"
       },
-      "verified": false,
+      "verified": true,
       "date": "29/11/2026",
       "url": "https://ntry.at/ravaladadragtour/performances/27595?l=es",
       "sort_date": "2026-11-29",
@@ -33,6 +33,7 @@
         "ca": "Novembre 2026",
         "es": "Noviembre 2026"
       },
+      "verified": true,
       "date": "Noviembre 2026",
       "url": "",
       "sort_date": "2026-11",
@@ -56,6 +57,7 @@
         "ca": "Octubre 2026",
         "es": "Octubre 2026"
       },
+      "verified": true,
       "date": "Octubre 2026",
       "url": "",
       "sort_date": "2026-10-10",
@@ -80,6 +82,7 @@
         "ca": "Setembre 2026",
         "es": "Septiembre 2026"
       },
+      "verified": true,
       "date": "Septiembre 2026",
       "url": "",
       "sort_date": "2026-09-12",
@@ -127,6 +130,7 @@
         "ca": "Agost 2026",
         "es": "Agosto 2026"
       },
+      "verified": true,
       "date": "Agosto 2026",
       "url": "",
       "sort_date": "2026-08-08",
@@ -150,6 +154,7 @@
         "ca": "Juliol 2026",
         "es": "Julio 2026"
       },
+      "verified": true,
       "date": "Julio 2026",
       "url": "",
       "sort_date": "2026-07-11",
@@ -173,6 +178,7 @@
         "ca": "Juny 2026",
         "es": "Junio 2026"
       },
+      "verified": true,
       "date": "Junio 2026",
       "url": "",
       "sort_date": "2026-06-06",
@@ -196,11 +202,12 @@
         "ca": "Maig 2026",
         "es": "Mayo 2026"
       },
+      "verified": true,
       "date": "Mayo 2026",
       "url": "",
       "sort_date": "2026-05-22",
       "status": "past",
-      "location": "",
+      "location": "Sala Xtraperlo · Reus",
       "title": {
         "ca": "Nochentera · 80’s & 90’s amb Minerva la Unyas",
         "es": "Nochentera · 80’s & 90’s con Minerva la Unyas"
@@ -219,6 +226,7 @@
         "ca": "Abril 2026",
         "es": "Abril 2026"
       },
+      "verified": true,
       "date": "Abril 2026",
       "url": "",
       "sort_date": "2026-04-30",
@@ -242,6 +250,7 @@
         "ca": "Març 2026",
         "es": "Marzo 2026"
       },
+      "verified": true,
       "date": "Marzo 2026",
       "url": "",
       "sort_date": "2026-03-07",
